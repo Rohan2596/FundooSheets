@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { Material } from './material.module';
+import { AddProjectComponent } from './component/add-project/add-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AddProjectComponent
   ],
   imports: [
     BrowserModule,
