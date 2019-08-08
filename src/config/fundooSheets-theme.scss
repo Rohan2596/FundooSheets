@@ -1,0 +1,34 @@
+$_heading_font_size:18px;
+$_cardheading_font_size:16px;
+$_inputbox_font_size:14px;
+$_subtext_font_size:12px;
+$_tableheading_font_size:10px;
+$_heading_font_weight:600;
+$_button_font_weight:400;
+$_button_border_radius:none;
+$_heading_border_radius:10px;
+$font_family:Lato;
+$primary_color:#008CFF;
+$background_color:#F7F7F7;
+$_input_font_color:#40494D;
+$button_font_color:#FFFFFF;
+
+@mixin dialog_heading($font_weight,$border_radius) {
+    font-size: $_heading_font_size;
+    font-family: $font_family;
+    font-weight:$font_weight;
+    color:$button_font_color;
+    background-color:$primary_color;
+    border-radius: $border_radius;
+}
+@mixin  form() {
+    font-family: $font_family;
+    background-color: white;
+    color: $_input_font_color;
+    font-weight: 400;
+}
+
+@mixin  disable_button {
+    color: $button_font_color !important;
+    opacity: 0.6 !important;
+}
