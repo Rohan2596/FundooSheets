@@ -13,6 +13,7 @@ const registerDetails = {
 })
 export class RegisterComponent implements OnInit {
   hide: boolean = false;
+  hide1:boolean=false;
   disableSubmit: boolean = false;
 
   email = new FormControl(registerDetails.emailId, [Validators.required, Validators.email]);

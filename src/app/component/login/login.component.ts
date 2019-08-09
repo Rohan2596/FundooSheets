@@ -37,5 +37,7 @@ export class LoginComponent implements OnInit {
     console.log(this.password);
     
   }
-
+  register(){
+    this.router.navigate(['/register'])
+  }
 }

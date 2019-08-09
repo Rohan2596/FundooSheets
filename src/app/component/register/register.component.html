@@ -32,7 +32,7 @@
                 <mat-label>Confirm Password</mat-label>
                 <input matInput [type]="hide ? 'text' : 'password'" autocomplete="off"
                     maxlength="100" [formControl]="confirmpassword">
-                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}
+                <mat-icon matSuffix (click)="hide = !hide">{{hide1 ? 'visibility' : 'visibility_off'}}
                 </mat-icon>
                 <mat-error>This isn't Valid Password</mat-error>
             </mat-form-field>
@@ -40,11 +40,11 @@
           </div>
           <div class="button-div">
               <button mat-button class="login-button" (click)="register()"
-              [disabled]="email.value.trim() == '' || (password.value.trim() == '' === confirmpassword.value.trim() == '') || disableSubmit">Login</button>
+              [disabled]="email.value.trim() == '' || password.value.trim() == '' || confirmpassword.value.trim() == '' || disableSubmit">Create Account</button>
           </div>
           <div class="forgot-div" fxLayoutAlign="center center">
 
-              <a class="forgot"  (click)="login()"  >Already Have Account?Click Here</a>
+              <a class="forgot"  (click)="login()"><u>Already Have Account?Click Here</u></a>
           </div>
 
 </div>

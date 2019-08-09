@@ -8,20 +8,21 @@ import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { Material } from './material.module';
 import { DashboardComponent } from "./component/dashboard/dashboard.component";
-import { ProfilePicComponent } from './component/profile-pic/profile-pic.component';
-
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ProfilePicComponent,
+    VeiwSheetsComponent,
     DashboardComponent
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule,
     Material
   ],
   providers: [],
