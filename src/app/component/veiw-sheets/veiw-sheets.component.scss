@@ -1,0 +1,7 @@
+@import'../../scss/constant.scss';
+@import'../../scss/color.scss';
+.heading
+{
+    font-size: $_heading_font_size;
+    color: $_input_font_color;
+}

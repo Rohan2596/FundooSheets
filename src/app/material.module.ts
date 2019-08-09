@@ -19,13 +19,15 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
-
+import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
 
 @NgModule({
   imports: [
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
@@ -63,7 +65,8 @@ import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
-
+    FormsModule,
+    ReactiveFormsModule,
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
