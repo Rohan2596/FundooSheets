@@ -20,6 +20,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
@@ -38,16 +39,18 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
-  
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
     MatDatepickerModule,
     MatNativeDateModule,
-   
     MatCheckboxModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCheckboxModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+
   exports: [
     MatFormFieldModule,
     MatCardModule,
@@ -64,14 +67,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
+    FlexLayoutModule,
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
     MatDatepickerModule,
     MatNativeDateModule ,
     MatCheckboxModule,
-    FlexLayoutModule
-    
+    FormsModule,
+    ReactiveFormsModule
 
   ]
 

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TechRequirementComponent } from './tech-requirement.component';
+import { VeiwSheetsComponent } from './veiw-sheets.component';
 
-describe('TechRequirementComponent', () => {
-  let component: TechRequirementComponent;
-  let fixture: ComponentFixture<TechRequirementComponent>;
+describe('VeiwSheetsComponent', () => {
+  let component: VeiwSheetsComponent;
+  let fixture: ComponentFixture<VeiwSheetsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TechRequirementComponent ]
+      declarations: [ VeiwSheetsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TechRequirementComponent);
+    fixture = TestBed.createComponent(VeiwSheetsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
