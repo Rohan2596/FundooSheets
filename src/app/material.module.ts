@@ -20,6 +20,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 
@@ -45,7 +46,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
     MatExpansionModule,
     MatDatepickerModule,
     MatNativeDateModule,
-   
+    FlexLayoutModule,
     MatCheckboxModule
   ],
   exports: [

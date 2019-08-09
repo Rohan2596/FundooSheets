@@ -1,23 +1,33 @@
-<div id = "2">
+<div id="2">
 
   <mat-sidenav-container class="mainContainer" fxFlexFill>
     <mat-sidenav #sidenav mode="side" opened class="sidenavContainer">
       <div fxLayout="column" fxLayoutAlign="start start" fxFlex="100">
 
-            side nav bar is here
+        side nav bar is here
 
       </div>
     </mat-sidenav>
-    
-    <mat-sidenav-content>
-        <div id = "3  ">
-        <mat-toolbar color="primary">
-        <span class="fill-remaining-space">Application Title</span>
-            </mat-toolbar>
-          </div>
 
+    <mat-sidenav-content>
+
+      <div fxLayout="row" fxLayoutAlign="start start" fxFlex = "100">
+        <mat-toolbar class="matToolbar">
+          <!-- <div class="search">
+                
+                  <input class="form-control" type="text" name="search" autocomplete="off" placeholder="&#150000;  Search">
+                </div> -->
+       
+          <mat-form-field appearance="outline" class="form-control">
+            <mat-icon>search</mat-icon>
+            <input matInput placeholder="search" name="search">
+          </mat-form-field>
+
+        </mat-toolbar>
+
+      </div>
     </mat-sidenav-content>
-    
+
   </mat-sidenav-container>
 
 
