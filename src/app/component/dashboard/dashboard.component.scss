@@ -1,0 +1,95 @@
+@import '../../scss/constant.scss';
+@import '../../scss/color.scss';
+
+.mainContainer{
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: #FCFDFD
+  
+}
+
+.sidenavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  border: 1px solid #dfdfdf;
+  background-color:$button_font_color;
+
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.matToolbar{
+  background-color: $button_font_color;
+  border: 0.2px solid #f2f5f7;
+  height: 73px;
+}
+
+
+.form-control{
+
+  width: 406px;
+  height: 30px;
+  display: flex;
+  width: 406px;
+
+}
+:host::ng-deep .mat-form-field{
+font-size:$_subtext_font_size;
+padding-left: 32px;
+
+}
+
+:host::ng-deep .mat-form-field-wrapper{
+  padding: 0px;
+}
+
+:host::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0em 0 0em 0; 
+  display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 406px;
+    border-top: .0em solid transparent;
+  .mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 406px;
+  }
+}
+
+.mat-form-field-infix {
+  display: block;
+  position: relative;
+  flex: auto;
+  min-width: 0;
+  width: 180px;
+}
+
+.matbutton{
+  margin-left: 23px;
+    margin-top: 7px;
+}
+
+.mat-raised-button{
+  background-color: #008CFF;
+  width: 192px;
+  margin-top: 7px;
+  // border-top-right-radius: 38px;
+  // border-bottom-right-radius: 38px;
+}
+
+.mat-raised-button1{
+  width: 192px;
+  margin-top: 7px;
+  font-size:$_subtext_font_size;
+}

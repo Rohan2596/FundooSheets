@@ -1,1 +1,81 @@
-<p>dashboard works!</p>
+<div>
+
+  <mat-sidenav-container fxFlexFill class="mainContainer">
+    <mat-sidenav #sidenav mode="side" opened class="sidenavContainer">
+      <div fxLayout="column" fxLayoutAlign="start start" fxFlex="100">
+        <div fxLayoutAlign="center center">
+          <button mat-button class="matbutton">
+            <img mat-card-avatar src="../../../assets/images/Group 3521.svg">
+          </button>
+        </div>
+
+        <div >
+        
+            <button mat-raised-button class = "mat-raised-button"> 
+                <mat-label>Tech Management</mat-label>
+                <mat-select>
+                 
+                </mat-select>
+              </button>
+        </div>
+
+        <div><button mat-button class = "mat-raised-button1">
+            <img src="../../../assets/images/dashboard.svg"><span style="margin:10%" role="listitem">
+              Dashboard</span>
+          </button>
+        </div>
+
+        <div><button mat-button class = "mat-raised-button1">
+            <img src="../../../assets/images/dashboard.svg"><span style="margin:10%" role="listitem">
+                fundooSheets  </span>
+          </button>
+        </div>
+
+        <div><button mat-button class = "mat-raised-button1">
+            <img src="../../../assets/images/Group 3105.svg"><span style="margin:10%" role="listitem">
+                Settings  </span>
+          </button>
+        </div>
+      </div>
+
+
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+      <div fxLayout="row" fxLayoutAlign="start" fxFlex="100">
+        <mat-toolbar class="matToolbar">
+          <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="100">
+            <div fxFlex="60">
+              <mat-form-field appearance="outline" class="formfield">
+                <mat-icon matPrefix>search</mat-icon>
+                <!-- <div fxLayout="row" fxFlex.lg="35" fxFlex.md="40" fxFlex.xs="90" fxFlex.sm="90"> -->
+                <input matInput placeholder="search" name="search">
+                <!-- </div> -->
+
+              </mat-form-field>
+            </div>
+
+            <div>
+              <button mat-icon-button matTooltip="profile">
+                <img mat-card-avatar src="../../../assets/images/account.svg">
+              </button>
+
+            </div>
+
+
+          </div>
+        </mat-toolbar>
+      </div>
+
+
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+
+
+
+</div>
