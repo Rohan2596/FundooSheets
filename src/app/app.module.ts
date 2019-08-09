@@ -8,23 +8,17 @@ import { LoginComponent } from './component/login/login.component';
 import { TechRequirementComponent } from "./component/tech-requirement/tech-requirement.component";
 import { RegisterComponent } from './component/register/register.component';
 import { Material } from './material.module';
-<<<<<<< HEAD
-import { AddProjectComponent } from './component/add-project/add-project.component';
-=======
 import { DashboardComponent } from "./component/dashboard/dashboard.component";
->>>>>>> b771c2f87fcf1139e2946cd432ae02eb96054408
+import { AddProjectComponent } from './component/add-project/add-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-<<<<<<< HEAD
-    AddProjectComponent
-=======
     TechRequirementComponent,
-    DashboardComponent
->>>>>>> b771c2f87fcf1139e2946cd432ae02eb96054408
+    DashboardComponent,
+    AddProjectComponent
   ],
   imports: [
     BrowserAnimationsModule,

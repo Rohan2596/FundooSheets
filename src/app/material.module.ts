@@ -19,7 +19,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -46,7 +46,7 @@ import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
     MatNativeDateModule,
    
     MatCheckboxModule,
-    
+    FlexLayoutModule
   ],
   exports: [
     MatFormFieldModule,
@@ -69,7 +69,8 @@ import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
     MatExpansionModule,
     MatDatepickerModule,
     MatNativeDateModule ,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FlexLayoutModule
     
 
   ]
