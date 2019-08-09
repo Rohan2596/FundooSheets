@@ -8,6 +8,7 @@ import { RegisterComponent } from './component/register/register.component';
 import { Material } from './material.module';
 import { DashboardComponent } from "./component/dashboard/dashboard.component";
 import { AddProjectComponent } from './component/add-project/add-project.component';
+import { AddProjectdialogBoxComponent } from './component/add-projectdialog-box/add-projectdialog-box.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AddProjectComponent } from './component/add-project/add-project.compone
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    AddProjectComponent
+    AddProjectComponent,
+    AddProjectdialogBoxComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -24,6 +26,7 @@ import { AddProjectComponent } from './component/add-project/add-project.compone
     Material
   ],
   providers: [],
+  entryComponents : [AddProjectdialogBoxComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

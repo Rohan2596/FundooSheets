@@ -3,9 +3,11 @@
         <mat-card>
             <div fxLayout="column" fxLayoutAlign="space-around center" >
                     <div class = "addIcon">
-                        <mat-icon>
-                            <img src="../../../assets/Group 3306.svg">
-                        </mat-icon>
+                        <button mat-icon-button matTooltip="add project" (click) = "openDialog(items)">
+                            <mat-icon>
+                                <img src="../../../assets/Group 3306.svg">
+                            </mat-icon>
+                        </button>
                     </div>
                     <div class="addProject">
                         <span>Add Project</span>

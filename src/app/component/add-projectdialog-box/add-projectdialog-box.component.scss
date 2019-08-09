@@ -1,0 +1,21 @@
+@import '../../scss/constant.scss';
+@import '../../scss/color.scss';
+
+// .name
+// {
+//     width: 420px;
+//     height: 47px;
+// }
+
+// .description
+// {
+//     width: 420px;
+//     height: 74px;
+// }
+
+.mat-form-field {
+    font-size: $_inputbox_font_size;
+    width: 421px;
+    font-family: $font_family;
+    color: $_input_font_color;
+}
