@@ -1,7 +1,113 @@
 @import'../../scss/constant.scss';
 @import'../../scss/color.scss';
 .heading
+{ font-size:15px;
+    color:#40494D;
+    font-family:$font_family;
+    font-weight:600;
+   
+}
+.main-div
 {
-    font-size: $_heading_font_size;
-    color: $_input_font_color;
+    padding:1%;
+}
+.input
+{
+    border:none;
+    outline:none;
+    height: 48%;
+    margin-left:2%;
+}
+.cancel
+{
+    color:#C0C0C0;
+}
+.save
+{
+    color:#C0C0C0;
+    padding-left:3%;
+    padding-right:3%; 
+    background-color: #FFFFFF;  
+}
+:host::ng-deep .mat-stroked-button {
+    border: 1px solid #707070;
+    padding: 0 15px;
+    line-height: 26px;
+}
+.file-icon
+{
+    font-size: 20px;
+    color: #737475;
+
+}
+.share{
+    background-color:#F5F5F5; 
+    border-radius: 12px;
+    height: 24px;
+}
+.share-icon
+{
+    font-size: 14px;
+   text-align:center;
+    color:#737475;
+    margin-top:2px;
+    margin-bottom: -4px;
+}
+.tech
+{
+    font-size:15px;
+    color:#40494D;
+    font-family:$font_family;
+    font-weight:600;
+}
+.header
+{
+    border:1px solid #C0C0C0;
+    background-color: #F8F9FA;
+    color:#737475;
+    font-size:12px;
+    font-family:$font_family;
+   padding:2px;
+}
+.srno{
+    border:1px solid #C0C0C0;
+    background-color: #F8F9FA;
+    color:#737475;
+    font-size:12px;
+    font-family:$font_family;
+}
+.row
+{
+    border:0.2px solid #C0C0C0;
+    border-top: 0px;
+   
+}
+:host::ng-deep .mat-raised-button {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 27px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+}
+.count
+{
+    border: 1px solid grey;
+    width: 4%;
 }

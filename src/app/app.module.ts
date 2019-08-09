@@ -15,8 +15,8 @@ import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.compone
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent,
-    VeiwSheetsComponent
+    VeiwSheetsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserAnimationsModule,
