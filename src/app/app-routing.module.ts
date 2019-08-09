@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './component/login/login.component';
-import { DashboardComponent } from "./component/dashboard/dashboard.component";
+import { RegisterComponent } from './component/register/register.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { ProfilePicComponent } from './component/profile-pic/profile-pic.component';
 
 const routes: Routes = [
   {
@@ -9,9 +11,16 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
-    path:'dashboard',
-    component:DashboardComponent
-  }
+    path:'register',
+    component:RegisterComponent},
+{
+  path:'dashboard',
+  component: DashboardComponent
+},
+{
+  path:'profilepic',
+  component: ProfilePicComponent
+},
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes),],
