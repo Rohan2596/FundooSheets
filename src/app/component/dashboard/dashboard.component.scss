@@ -1,0 +1,23 @@
+.mainContainer{
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff
+  
+}
+
+.sidenavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff
+
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
