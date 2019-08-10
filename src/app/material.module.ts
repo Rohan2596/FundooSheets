@@ -19,10 +19,10 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
-
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
 import { MatMenuModule} from '@angular/material/menu';
+
 @NgModule({
   imports: [
     MatFormFieldModule,
@@ -76,7 +76,7 @@ import { MatMenuModule} from '@angular/material/menu';
     MatNativeDateModule ,
     MatCheckboxModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,MatMenuModule
 
   ]
 
