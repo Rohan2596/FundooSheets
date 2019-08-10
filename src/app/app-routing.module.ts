@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'resetPassword',
     component: ResetPasswordComponent
+  },
+  {
+    path: 'projects',
+    component: AddProjectComponent
   }
 
 ];
