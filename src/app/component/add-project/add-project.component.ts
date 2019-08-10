@@ -11,7 +11,6 @@ import { AddProjectService } from '../../services/add-project.service';
 export class AddProjectComponent implements OnInit {
   public dialogRef: any;
   public projects: any;
-  private popup: boolean;
 
   constructor(
     public matDialog: MatDialog,
@@ -41,8 +40,5 @@ export class AddProjectComponent implements OnInit {
     );
   }
 
-  // onPopup() {
-  //   this.popup = true;
-  // }
 
 }
