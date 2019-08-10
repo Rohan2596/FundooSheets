@@ -18,11 +18,11 @@
 
     <div fxLayout="row" fxLayoutAlign="end end" class = "addProjectButton">
         <div fxLayout="row" fxLayoutAlign="center center">
-            <button mat-button routerLink='/projects'>Cancel</button>
+            <button mat-button [mat-dialog-close]="true">Cancel</button>
         </div>
 
         <div>
-            <button mat-raised-button color="primary" routerLink='/dashboard'>Create</button>
+            <button mat-raised-button color="primary" [mat-dialog-close]="true" routerLink='/dashboard'>Create</button>
         </div>
     </div>
 
