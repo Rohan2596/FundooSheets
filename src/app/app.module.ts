@@ -10,6 +10,8 @@ import { DashboardComponent } from "./component/dashboard/dashboard.component";
 import { AddProjectComponent } from './component/add-project/add-project.component';
 import { AddProjectdialogBoxComponent } from './component/add-projectdialog-box/add-projectdialog-box.component';
 
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +19,15 @@ import { AddProjectdialogBoxComponent } from './component/add-projectdialog-box/
     RegisterComponent,
     DashboardComponent,
     AddProjectComponent,
-    AddProjectdialogBoxComponent
+    AddProjectdialogBoxComponent,
+    VeiwSheetsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule,
     Material
   ],
   providers: [],
