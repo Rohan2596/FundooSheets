@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddProjectdialogBoxComponent } from '../../component/add-projectdialog-box/add-projectdialog-box.component';
+import { AddProjectService } from '../../services/add-project.service';
 
 @Component({
   selector: 'app-add-project',
@@ -8,25 +9,40 @@ import { AddProjectdialogBoxComponent } from '../../component/add-projectdialog-
   styleUrls: ['./add-project.component.scss']
 })
 export class AddProjectComponent implements OnInit {
-  public dialogRef: any
+  public dialogRef: any;
+  public projects: any;
+  private popup: boolean;
+
   constructor(
-    public matDialog: MatDialog
+    public matDialog: MatDialog,
+    private addProjectService: AddProjectService,
   ) { }
 
   ngOnInit() {
+    this.addProject();
   }
 
   openDialog() {
     const dialogRef = this.matDialog.open(AddProjectdialogBoxComponent, {
       width: '513px', height: '301px',
       data: {
-        // name: items.name,
-        // description: items.description,
       }
     });
     dialogRef.afterClosed().subscribe(result => {
       // console.log(`dialog result:${result}`);
     });
   }
+
+  addProject() {
+    this.addProjectService.addProject().subscribe(
+      (response: any) => {
+        this.projects = response.addProject;
+      }
+    );
+  }
+
+  // onPopup() {
+  //   this.popup = true;
+  // }
 
 }

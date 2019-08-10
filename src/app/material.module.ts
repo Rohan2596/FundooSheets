@@ -22,7 +22,7 @@ import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { MatMenuModule} from '@angular/material/menu';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -52,7 +52,8 @@ import { HttpClientModule } from "@angular/common/http";
     MatCheckboxModule,
     FormsModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule
   ],
 
   exports: [
