@@ -12,6 +12,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.component';
 import { ForgotPasswordComponent } from "./component/forgot-password/forgot-password.component";
 import { ResetPasswordComponent } from "./component/reset-password/reset-password.component";
+import { DashboardBoxComponent } from "./component/dashboard-box/dashboard-box.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ResetPasswordComponent } from "./component/reset-password/reset-passwor
     VeiwSheetsComponent,
     DashboardComponent,
     ResetPasswordComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    DashboardBoxComponent
   ],
   imports: [
     BrowserAnimationsModule,

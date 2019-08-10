@@ -10,6 +10,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { ProfilePicComponent } from './component/profile-pic/profile-pic.component';
 import { ForgotPasswordComponent } from "./component/forgot-password/forgot-password.component";
 import { ResetPasswordComponent } from "./component/reset-password/reset-password.component";
+import { DashboardBoxComponent } from "./component/dashboard-box/dashboard-box.component";
 const routes: Routes = [
   {
     path:'login',
@@ -24,6 +25,10 @@ component:ForgotPasswordComponent},
 {
   path:'resetPassword',
   component:ResetPasswordComponent
+},
+{
+  path:'dashboardbox',
+  component:DashboardBoxComponent
 }
 
 ]
