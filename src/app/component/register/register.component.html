@@ -26,7 +26,7 @@
                       maxlength="100" [formControl]="password" >
                   <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}
                   </mat-icon>
-                  <mat-error>This isn't Valid Password</mat-error>
+                  <mat-error *ngIf="password.invalid ">{{getErrorMessagePassword()}}</mat-error>
               </mat-form-field>
               <mat-form-field appearance="outline" class="form-field1" style="margin-top: 25px;margin-bottom: 25px" >
                 <mat-label>Confirm Password</mat-label>
@@ -34,7 +34,7 @@
                     maxlength="100" [formControl]="confirmpassword">
                 <mat-icon matSuffix (click)="hide = !hide">{{hide1 ? 'visibility' : 'visibility_off'}}
                 </mat-icon>
-                <mat-error>This isn't Valid Password</mat-error>
+                <mat-error *ngIf="confirmpassword.invalid ">{{getErrorMessagePassword()}}</mat-error>
             </mat-form-field>
            
           </div>
