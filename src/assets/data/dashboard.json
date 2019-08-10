@@ -1,3 +1,66 @@
-[
-    
-]
+{
+    "Lab":[
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        },
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        },
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        },
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        },
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        },
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        },
+        {
+            "city": "Mumbai",
+            "Enginner": "10",
+            "Selected": "100"
+        }      
+
+    ],
+    "Tech Stack": [
+        {
+            "techType": "DevOPs"
+        },
+        {
+            "techType": "FrontEnd"
+        },
+        {
+            "techType": "Backened"
+        },
+        {
+            "techType": "Mobility"
+        },
+        {
+            "techType": "MeanStack"
+        },
+        {
+            "techType": "MEARStack"
+        },
+        {
+            "techType": "Testing"
+        },
+        {
+            "techType": "FullStack"
+        }
+    ]
+}
