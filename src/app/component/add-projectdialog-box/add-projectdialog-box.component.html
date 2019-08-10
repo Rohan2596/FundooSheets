@@ -1,0 +1,27 @@
+<div fxFill fxLayout="column" fxLayoutAlign="space-around center">
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field appearance="outline" class="name">
+            <mat-label>Project Name</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field appearance="outline" class="description">
+            <mat-label>Description</mat-label>
+            <textarea matInput type="text"></textarea>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="end end" class = "addProjectButton">
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <button mat-button routerLink='/addProject'>Cancel</button>
+        </div>
+
+        <div>
+            <button mat-raised-button color="primary" routerLink='/dashboard'>Create</button>
+        </div>
+    </div>
+
+</div>

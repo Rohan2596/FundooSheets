@@ -1,43 +1,6 @@
-{
-    "Lab":[
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        },
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        },
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        },
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        },
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        },
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        },
-        {
-            "city": "Mumbai",
-            "Enginner": "10",
-            "Selected": "100"
-        }      
 
-    ],
-    "Tech Stack": [
+{
+    "Tech Type": [
         {
             "techType": "DevOPs"
         },
@@ -62,5 +25,32 @@
         {
             "techType": "FullStack"
         }
+    ],
+    "Lab": [
+        {
+            "City": "Mumbai",
+            
+            "Enginer": "10",
+            "Selected": "80"
+        },
+        {
+            "City": "Pune",
+            
+            "Enginer": "120",
+            "Selected": "800"
+        },
+        {
+            "City": "Banglore",
+            
+            "Enginer": "11",
+            "Selected": "8"
+        },
+        {
+            "City": "Nodia",
+            
+            "Enginer": "41",
+            "Selected": "756"
+        }
+       
     ]
 }

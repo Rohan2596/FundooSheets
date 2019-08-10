@@ -1,0 +1,46 @@
+@import '../../scss/constant.scss';
+@import '../../scss/color.scss';
+
+.mat-card 
+{
+    //box-shadow: 0px, 1px 3px #000000 ;
+    //box-shadow: 3px 3px 3px 3px grey;
+    margin-left: 139px;
+    margin-top:104px; 
+    width: 202px;
+    height: 111px;
+    //border-style: groove;
+    //border-width: 5px, 5px, 5px, 5px;    
+}
+
+.addProject
+{
+    font-family: $font_family;
+    font-size:$_inputbox_font_size; 
+    color:$primary_color; 
+}
+
+.addProjectCenterText
+{
+    font-family: $font_family;
+    font-size: 35px;
+    color: $_input_font_color;
+}
+
+.addProjectCenterText2
+{
+    font-family: $font_family;
+    font-size: 20px;
+    color: $_input_font_color;
+}
+
+.addIcon
+{
+
+    margin-top: 15px;
+    color:$primary_color; 
+}
+
+// .a{
+//  font-size:$_subtext_font_size;
+// }
