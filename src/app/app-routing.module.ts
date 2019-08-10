@@ -13,24 +13,23 @@ import { ProfilePicComponent } from './component/profile-pic/profile-pic.compone
 
 const routes: Routes = [
   {
-    path:'login',
-    component:LoginComponent
+    path: 'login',
+    component: LoginComponent
   },
   {
     path : 'addProject',
     component : AddProjectComponent
   },
   {
-    path:'register',
+    path: 'register',
     component : RegisterComponent},
   {
-    path:'dashboard',
-    component:DashboardComponent
+    path: 'dashboard',
+    component: DashboardComponent
   }
-
-]
+];
 @NgModule({
-  imports: [RouterModule.forRoot(routes),],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

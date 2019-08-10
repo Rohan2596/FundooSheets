@@ -1,21 +1,49 @@
 @import '../../scss/constant.scss';
 @import '../../scss/color.scss';
 
-// .name
-// {
-//     width: 420px;
-//     height: 47px;
-// }
+.name
+{
+    height: 47px;
+}
 
-// .description
-// {
-//     width: 420px;
-//     height: 74px;
-// }
-
-.mat-form-field {
+.mat-form-field 
+{
     font-size: $_inputbox_font_size;
     width: 421px;
     font-family: $font_family;
     color: $_input_font_color;
+}
+
+textarea.mat-input-element
+{ 
+    height: 74px;
+}
+
+.mat-raised-button {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 143px;
+    min-height: 46px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: $font_family;
+}
+
+.mat-button{
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 143px;
+    min-height: 46px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: $font_family;
+    margin-left: 134px;
 }

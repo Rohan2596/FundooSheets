@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageCroppedEvent } from 'ngx-image-cropper';
+//import { ImageCroppedEvent } from 'ngx-image-cropper';
 import { MatDialogRef } from '@angular/material';
 
 @Component({
