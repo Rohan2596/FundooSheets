@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, ) { }
 
   ngOnInit() {
+  console.log ( this.password.status)
   }
   getErrorMessageEmail() {
     return this.email.hasError('required') ? 'EmailId Is Required.' :
@@ -28,13 +29,16 @@ export class LoginComponent implements OnInit {
         '';
   }
   getErrorMessagePassword() {
-    return this.email.hasError('required') ? 'Password Feild Is Required.' :
-      this.email.hasError('minLength') ? 'Min Character For Password is 5' :
+    return this.password.hasError('required') ? 'Password Feild Is Required.' :
+      this.password.hasError('minLength') ? 'Min Character For Password is 5' :
         '';
+        
   }
   login(){
     console.log(this.email);
     console.log(this.password);
+    console.log(this.getErrorMessagePassword())
+    console.log ( this.password.status)
     
   }
   register(){

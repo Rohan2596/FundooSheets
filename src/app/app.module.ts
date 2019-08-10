@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { Material } from './material.module';
-import { DashboardComponent } from "./component/dashboard/dashboard.component";
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { AddProjectComponent } from './component/add-project/add-project.component';
 import { AddProjectdialogBoxComponent } from './component/add-projectdialog-box/add-projectdialog-box.component';
-
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.component';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './component/reset-password/reset-password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,9 @@ import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.compone
     AddProjectComponent,
     AddProjectdialogBoxComponent,
     VeiwSheetsComponent,
-    DashboardComponent
+    DashboardComponent,
+    ResetPasswordComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserAnimationsModule,

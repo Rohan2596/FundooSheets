@@ -76,7 +76,7 @@ padding-left: 32px;
 }
 
 .matbutton{
-  margin-left: 23px;
+    margin-left: 23px;
     margin-top: 7px;
 }
 
@@ -84,19 +84,61 @@ padding-left: 32px;
   background-color: #008CFF;
   width: 192px;
   margin-top: 7px;
-  // border-top-right-radius: 38px;
-  // border-bottom-right-radius: 38px;
 }
 
-.mat-raised-button1{
+.matbutton1{
   width: 192px;
   margin-top: 7px;
   font-size:$_subtext_font_size;
 }
 
+.matbutton1:hover{
+  background-color: #EAF5FF;
+  color: #008CFF;
+}
+
 .sidelist {
   margin: 0;
-  font-size: 12px;
-  margin-left: 7%;
+  font-size: $_subtext_font_size;
   font-family: $_subtext_font_size;
+  align-content: center;
+  direction: ltr
+}
+
+.icon{
+   fill:#40494D;
+}
+.icon:hover {
+  fill: #008CFF;
+}
+
+.img1{    
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.text_color{
+    display: block;
+    margin-bottom: 8px;
+    font-size: $_subtext_font_size;
+}
+
+.text_color1{
+  display: block;
+  font-size: $_tableheading_font_size;
+}
+
+.sidelist1 {
+  margin: 0;
+  font-size: $_subtext_font_size;
+  font-family: $_subtext_font_size;
+  align-content: center;
+
+}
+
+.mat-button1{
+  background-color: #E2E2E2;
 }

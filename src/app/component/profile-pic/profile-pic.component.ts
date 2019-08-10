@@ -8,24 +8,24 @@ import { MatDialogRef } from '@angular/material';
   styleUrls: ['./profile-pic.component.scss']
 })
 export class ProfilePicComponent implements OnInit {
-  // imageChangedEvent: any = '';
-  // croppedImageEvent: ImageCroppedEvent;
-  // path: any = '';
-  // constructor(private dialogRef: MatDialogRef<ProfilePicComponent>) { }
+  imageChangedEvent: any = '';
+  croppedImageEvent: ImageCroppedEvent;
+  path: any = '';
+  constructor(private dialogRef: MatDialogRef<ProfilePicComponent>) { }
 
   ngOnInit() {
   }
 
-  // fileChangeEvent(event: any): void {
-  //   this.imageChangedEvent = event;
-  //   console.log("30 : ", event.target.files[0]);
-  //   this.path = event.target.files[0].name;
-  // }
+  fileChangeEvent(event: any): void {
+    this.imageChangedEvent = event;
+    console.log("30 : ", event.target.files[0]);
+    this.path = event.target.files[0].name;
+  }
 
-  // imageCropped(event: ImageCroppedEvent) {
-  //   this.croppedImageEvent = event;
-  //   // this.croppedImage = event.base64;
-  //   console.log(this.croppedImageEvent);
-  // }
+  imageCropped(event: ImageCroppedEvent) {
+    this.croppedImageEvent = event;
+    // this.croppedImage = event.base64;
+    console.log(this.croppedImageEvent);
+  }
 
 }
