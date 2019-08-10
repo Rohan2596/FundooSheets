@@ -4,6 +4,7 @@
 .name
 {
     height: 47px;
+    margin-bottom: 27px;
 }
 
 .mat-form-field 
@@ -17,6 +18,7 @@
 textarea.mat-input-element
 { 
     height: 74px;
+    // color: $primary_color;
 }
 
 .mat-raised-button {
@@ -31,6 +33,7 @@ textarea.mat-input-element
     border-radius: 4px;
     overflow: visible;
     font-family: $font_family;
+    background-color:  $primary_color;
 }
 
 .mat-button{
@@ -46,4 +49,8 @@ textarea.mat-input-element
     overflow: visible;
     font-family: $font_family;
     margin-left: 134px;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color:  $primary_color !important;
 }

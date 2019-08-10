@@ -15,9 +15,22 @@
                     </div>
             </div>
         </mat-card>
-    </div>
+    
 
-    <div fxLayout="column" fxLayoutAlign="center center">
+
+    <div fxLayout="row wrap" fxLayoutAlign= "space-evenly center">
+
+            <div *ngFor="let items of projects">
+                <mat-card>
+                    <!-- <span>card</span> -->
+                    <div fxLayoutAlign= "center center" class = "nameInput">{{items.projectName}}</div>
+                </mat-card>
+            </div>
+    </div>
+</div>
+
+
+    <div fxLayout="column" fxLayoutAlign="center center" *ngIf="projects == null">
         <div>
             <img src="../../../assets/Group 3523.svg">
         </div>
