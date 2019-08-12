@@ -21,7 +21,13 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent
+    component: DashboardComponent,
+    children:[
+      {
+        path:'dashboardbox',
+        component:DashboardBoxComponent
+      }
+    ]
   },
   {
     path: 'forgotPassword',

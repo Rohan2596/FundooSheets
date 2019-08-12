@@ -61,7 +61,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-
+<div>
       <div fxLayout="row" fxLayoutAlign="start" fxFlex="100">
         <mat-toolbar class="matToolbar">
           <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="100">
@@ -112,6 +112,11 @@
           </div>
         </mat-toolbar>
       </div>
+
+     </div>
+   <div class="routerdiv"  (click)="openCard=false">
+      <router-outlet ></router-outlet>
+    </div>
 
 
 

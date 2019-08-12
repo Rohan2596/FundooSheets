@@ -8,9 +8,9 @@
                         <div fxLayout="row wrap" fxLayoutGap="14px" class="supertechtype1">
                                 <div   class="city" fxLayout="row wrap"  style="border:1px solid #C3C8CC;"
                                     *ngFor="let items of lab">
-                                    <div>
-                                        <div class="cityName" fxLayout="row" fxLayoutAlign="center center"><div>{{items?.City}}</div></div>
-                                        <div  style="width: 186px" fxLayout="row" fxLayoutGap="14px" fxLayoutAlign="space-around center" >
+                                    <div class="contentdiv">
+                                        <div class="cityName" fxLayout="row" fxLayoutAlign="center center"><div class="cityContent" >{{items?.City}}</div></div>
+                                        <div class="AllContent" fxLayout="row" fxLayoutGap="14px" fxLayoutAlign="space-around center" >
                                             <div class="enginername"  fxLayout="column" fxLayoutAlign="center center" ><div class="numdiv1">{{items?. Enginer}}</div>
                                         <div class="description">No .of Engi</div></div>
                                             <div class="divider" style="color: transparent ;border-left:1px solid #C3C8CC;">l</div>
