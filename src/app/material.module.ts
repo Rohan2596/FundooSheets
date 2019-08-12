@@ -19,14 +19,8 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker'; 
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
-<<<<<<< HEAD
-
-
-
-=======
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
->>>>>>> adef52cad0247d41c454f93ad94e47abc00bbf01
 @NgModule({
   imports: [
     MatFormFieldModule,
@@ -71,10 +65,7 @@ import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
-<<<<<<< HEAD
-=======
 FlexLayoutModule,
->>>>>>> adef52cad0247d41c454f93ad94e47abc00bbf01
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
