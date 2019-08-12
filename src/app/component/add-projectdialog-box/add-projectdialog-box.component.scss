@@ -1,0 +1,56 @@
+@import '../../scss/constant.scss';
+@import '../../scss/color.scss';
+
+.name
+{
+    height: 47px;
+    margin-bottom: 27px;
+}
+
+.mat-form-field 
+{
+    font-size: $_inputbox_font_size;
+    width: 421px;
+    font-family: $font_family;
+    color: $_input_font_color;
+}
+
+textarea.mat-input-element
+{ 
+    height: 74px;
+    // color: $primary_color;
+}
+
+.mat-raised-button {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 143px;
+    min-height: 46px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: $font_family;
+    background-color:  $primary_color;
+}
+
+.mat-button{
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 143px;
+    min-height: 46px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: $font_family;
+    margin-left: 134px;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color:  $primary_color !important;
+}

@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
   email = new FormControl(registerDetails.emailId, [Validators.required, Validators.email]);
   password = new FormControl(registerDetails.password, [Validators.required, Validators.minLength(5)]);
   confirmpassword = new FormControl(registerDetails.confirmpassword, [Validators.required, Validators.minLength(5)]);
- constructor(private router:Router) { }
+ constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -35,7 +35,6 @@ export class RegisterComponent implements OnInit {
   }
   register(){
     console.log("successfull");
-    
   }
   login(){
 this.router.navigate(['/login'])

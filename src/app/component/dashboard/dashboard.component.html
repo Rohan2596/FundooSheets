@@ -1,1 +1,125 @@
-<p>dashboard works!</p>
+<div>
+
+  <mat-sidenav-container fxFlexFill class="mainContainer">
+    <mat-sidenav #sidenav mode="side" opened class="sidenavContainer">
+      <div fxLayout="column" fxLayoutAlign="start start" fxFlex="100">
+        <div fxLayoutAlign="center center">
+          <button mat-button class="matbutton">
+            <img mat-card-avatar src="../../../assets/images/Group 3521.svg">
+          </button>
+        </div>
+
+
+        <div>
+
+          <button mat-raised-button class="mat-raised-button">
+            <mat-label>Tech Management </mat-label>
+
+            <!-- <mat-select>
+                 
+                  </mat-select> -->
+
+
+          </button>
+        </div>
+
+        <div fxLayout="row">
+          <button mat-button class="matbutton1">
+            <div fxLayout="row" fxLayoutAlign="start center" dir="ltr" fxLayoutGap="20px">
+              <img src="../../../assets/images/dashboard.svg" class="icon">
+              <p class="sidelist"> Dashboard</p>
+            </div>
+          </button>
+        </div>
+
+
+        <div fxLayout="row">
+          <button mat-button class="matbutton1">
+            <div fxLayout="row" fxLayoutAlign="start center" dir="ltr" fxLayoutGap="20px">
+              <img src="../../../assets/images/dashboard.svg">
+              <p class="sidelist"> fundooSheets</p>
+            </div>
+          </button>
+        </div>
+
+        <div fxLayout="row">
+          <button mat-button class="matbutton1">
+            <div fxLayout="row" fxLayoutAlign="start center" dir="ltr" fxLayoutGap="21px">
+              <img src="../../../assets/images/Group 3105.svg" style="padding: 3px">
+              <p class="sidelist"> settings</p>
+            </div>
+          </button>
+        </div>
+
+
+
+
+      </div>
+
+
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+      <div fxLayout="row" fxLayoutAlign="start" fxFlex="100">
+        <mat-toolbar class="matToolbar">
+          <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="100">
+            <div fxFlex="60">
+              <mat-form-field appearance="outline" class="formfield">
+                <mat-icon matPrefix>search</mat-icon>
+                <!-- <div fxLayout="row" fxFlex.lg="35" fxFlex.md="40" fxFlex.xs="90" fxFlex.sm="90"> -->
+                <input matInput placeholder="search" name="search">
+                <!-- </div> -->
+
+              </mat-form-field>
+            </div>
+
+            <div>
+              <button mat-icon-button matTooltip="profile" [matMenuTriggerFor]="menu">
+                <img mat-card-avatar src="../../../assets/images/account.svg">
+              </button>
+
+              <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
+                <mat-menu #menu="matMenu">
+                  <div fxLayout="column" fxLayoutGap="5%">
+
+
+                    <div fxLayout="row" fxLayoutAlign="center center">
+                      <div class="img1">
+                        <img class="img1" mat-card-avatar src="../../../assets/images/account.svg">
+                      </div>
+                    </div>
+                    <div fxLayout="column" fxLayoutAlign="center center">
+                      <mat-card-title class="text_color">&nbsp;Pooja Todkar</mat-card-title>
+                    </div>
+                    <div fxLayout="column" fxLayoutAlign="start center">
+                      <mat-card-subtitle class="text_color1"> poojatodkar124@gmail.com</mat-card-subtitle>
+                    </div>
+
+                    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="25px">
+                      <button mat-raised-button class = "mat-button1">
+                        <p class="sidelist1">Change Password</p>
+                      </button>
+                      <button mat-raised-button class = "mat-button1">
+                          <p class="sidelist1">Logout</p>
+                        </button>
+                    </div>
+                  </div>
+                </mat-menu>
+              </div>
+            </div>
+          </div>
+        </mat-toolbar>
+      </div>
+
+
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+
+
+
+</div>

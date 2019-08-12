@@ -15,18 +15,21 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
-import {MatChipsModule} from '@angular/material/chips'; 
+import {MatChipsModule} from '@angular/material/chips';
 import {MatExpansionModule} from '@angular/material/expansion';
-import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, MatCheckboxModule } from '@angular/material';
-import { FlexLayoutModule } from "@angular/flex-layout";
-import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
+import { MatMenuModule} from '@angular/material/menu';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
+    HttpClientModule,
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
-    
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
@@ -44,11 +47,15 @@ import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
     MatExpansionModule,
     MatDatepickerModule,
     MatNativeDateModule,
-   FlexLayoutModule,
+    MatCheckboxModule,
+    FlexLayoutModule,
     MatCheckboxModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatMenuModule,
+    HttpClientModule
   ],
+
   exports: [
     MatFormFieldModule,
     MatCardModule,
@@ -65,7 +72,8 @@ import { FormsModule ,ReactiveFormsModule} from "@angular/forms";
     MatSnackBarModule,
     MatTabsModule,
     MatTooltipModule,
-FlexLayoutModule,
+    FlexLayoutModule,
+  FlexLayoutModule,
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
@@ -73,7 +81,9 @@ FlexLayoutModule,
     MatNativeDateModule ,
     MatCheckboxModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatMenuModule,
+    HttpClientModule
 
   ]
 

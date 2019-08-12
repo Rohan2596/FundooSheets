@@ -1,0 +1,54 @@
+@import '../../scss/constant.scss';
+@import '../../scss/color.scss';
+
+.mat-card 
+{
+    margin-left: 30px;
+    margin-top:104px; 
+    width: 202px;
+    height: 111px;
+}
+
+.addProject
+{
+    font-family: $font_family;
+    font-size:$_inputbox_font_size; 
+    color:$primary_color; 
+}
+
+.addProjectCenterText
+{
+    font-family: $font_family;
+    font-size: 35px;
+    color: $_input_font_color;
+}
+
+.addProjectCenterText2
+{
+    font-family: $font_family;
+    font-size: 20px;
+    color: $_input_font_color;
+}
+
+.addIcon
+{
+
+    margin-top: 15px;
+    color:$primary_color; 
+}
+
+.nameInput
+{
+    font-family: $font_family;
+    font-size:$_inputbox_font_size;
+    color: $_input_font_color;
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;
+}
+

@@ -1,0 +1,57 @@
+<div style="height: 100%;width: 100%" fxLayout="row" dir="ltr" fxLayoutGap="20px">
+    <div class="leftdiv" fxLayout="column">
+            <div class="techStack" fxLayout="row" dir="ltr" fxLayoutGap="10px">
+                    <div class="textdiv">Lab</div>
+                    <div class="numdiv">03</div>
+                </div>
+                <div>
+                        <div fxLayout="row wrap" fxLayoutGap="14px" class="supertechtype1">
+                                <div   class="city" fxLayout="row wrap"  style="border:1px solid #C3C8CC;"
+                                    *ngFor="let items of lab">
+                                    <div>
+                                        <div class="cityName" fxLayout="row" fxLayoutAlign="center center"><div>{{items?.City}}</div></div>
+                                        <div  style="width: 186px" fxLayout="row" fxLayoutGap="14px" fxLayoutAlign="space-around center" >
+                                            <div class="enginername"  fxLayout="column" fxLayoutAlign="center center" ><div class="numdiv1">{{items?. Enginer}}</div>
+                                        <div class="description">No .of Engi</div></div>
+                                            <div class="divider" style="color: transparent ;border-left:1px solid #C3C8CC;">l</div>
+                                            <div class="enginername"  fxLayout="column" fxLayoutAlign="center center" ><div class="numdiv1">{{items?. Selected}}</div>
+                                        <div class="description">Selected</div></div>
+                                        </div>
+
+
+                                    </div>
+                                 
+                                    <!-- <div class="textdiv1" matTooltip="{{items.techType}}">{{items?.techType}}</div> -->
+            
+                                </div>
+            
+                            </div>
+                </div>
+
+    </div>
+    <div class="rightdiv" fxLayout="column">
+        <div class="techStack" fxLayout="row" dir="ltr" fxLayoutGap="10px">
+            <div class="textdiv">Techstack</div>
+            <div class="numdiv">03</div>
+        </div>
+        <div class="innertechstack">
+            <div>
+
+                <div fxLayout="row wrap" fxLayoutGap="14px" class="supertechtype1">
+                    <div   class="techtype" fxLayout="row wrap" fxLayoutAlign="space-evenly center" style="border:1px solid #C3C8CC;"
+                        *ngFor="let items of techtypeData">
+
+
+                        <div class="textdiv1" matTooltip="{{items.techType}}">{{items?.techType}}</div>
+
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>

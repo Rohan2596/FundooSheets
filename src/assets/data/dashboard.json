@@ -1,0 +1,56 @@
+
+{
+    "Tech Type": [
+        {
+            "techType": "DevOPs"
+        },
+        {
+            "techType": "FrontEnd"
+        },
+        {
+            "techType": "Backened"
+        },
+        {
+            "techType": "Mobility"
+        },
+        {
+            "techType": "MeanStack"
+        },
+        {
+            "techType": "MEARStack"
+        },
+        {
+            "techType": "Testing"
+        },
+        {
+            "techType": "FullStack"
+        }
+    ],
+    "Lab": [
+        {
+            "City": "Mumbai",
+            
+            "Enginer": "10",
+            "Selected": "80"
+        },
+        {
+            "City": "Pune",
+            
+            "Enginer": "120",
+            "Selected": "800"
+        },
+        {
+            "City": "Banglore",
+            
+            "Enginer": "11",
+            "Selected": "8"
+        },
+        {
+            "City": "Nodia",
+            
+            "Enginer": "41",
+            "Selected": "756"
+        }
+       
+    ]
+}
