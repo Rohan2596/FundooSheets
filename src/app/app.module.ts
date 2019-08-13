@@ -14,6 +14,7 @@ import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.compone
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './component/reset-password/reset-password.component';
 import { DashboardBoxComponent } from "./component/dashboard-box/dashboard-box.component";
+import { ToolbarComponent } from "./component/toolbar/toolbar.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { DashboardBoxComponent } from "./component/dashboard-box/dashboard-box.c
     DashboardComponent,
     ResetPasswordComponent,
     ForgotPasswordComponent,
-    DashboardBoxComponent
+    DashboardBoxComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserAnimationsModule,

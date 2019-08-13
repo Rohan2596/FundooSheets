@@ -9,6 +9,7 @@ import { ProfilePicComponent } from './component/profile-pic/profile-pic.compone
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './component/reset-password/reset-password.component';
 import { DashboardBoxComponent } from './component/dashboard-box/dashboard-box.component';
+import { ToolbarComponent } from './component/toolbar/toolbar.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,16 @@ const routes: Routes = [
   {
     path:'dashboardbox',
     component:DashboardBoxComponent
+  },
+  {
+    path:'toolbar',
+    component:ToolbarComponent,
+    children:[
+      {
+        path:'',
+        component:AddProjectComponent
+      }
+    ]
   }
 
 ];
