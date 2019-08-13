@@ -9,8 +9,7 @@ import { ProfilePicComponent } from './component/profile-pic/profile-pic.compone
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './component/reset-password/reset-password.component';
 import { DashboardBoxComponent } from './component/dashboard-box/dashboard-box.component';
-import { AddFundoosheetComponent } from './component/add-fundoosheet/add-fundoosheet.component';
-import { ShowFundoosheetComponent } from './component/show-fundoosheet/show-fundoosheet.component';
+import { ToolbarComponent } from './component/toolbar/toolbar.component';
 
 const routes: Routes = [
   {
@@ -20,6 +19,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'techreq',
+    component: VeiwSheetsComponent
   },
   {
     path: 'dashboard',
@@ -48,12 +51,14 @@ const routes: Routes = [
     component:DashboardBoxComponent
   },
   {
-    path:'fundooSheet',
-    component: AddFundoosheetComponent
-  },
-  {
-    path:'showSheets',
-    component: ShowFundoosheetComponent
+    path:'toolbar',
+    component:ToolbarComponent,
+    children:[
+      {
+        path:'',
+        component:AddProjectComponent
+      }
+    ]
   }
 
 ];

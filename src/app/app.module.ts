@@ -14,8 +14,7 @@ import { VeiwSheetsComponent } from './component/veiw-sheets/veiw-sheets.compone
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './component/reset-password/reset-password.component';
 import { DashboardBoxComponent } from "./component/dashboard-box/dashboard-box.component";
-import { AddFundoosheetComponent } from "./component/add-fundoosheet/add-fundoosheet.component";
-import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fundoosheet.component";
+import { ToolbarComponent } from "./component/toolbar/toolbar.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +28,12 @@ import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fund
     ResetPasswordComponent,
     ForgotPasswordComponent,
     DashboardBoxComponent,
+<<<<<<< HEAD
     AddFundoosheetComponent,
     ShowFundoosheetComponent
+=======
+    ToolbarComponent
+>>>>>>> 4024eb45d4e09a87efcc334d2f485b62bec7c4a5
   ],
   imports: [
     BrowserAnimationsModule,
