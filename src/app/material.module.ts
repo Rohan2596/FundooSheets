@@ -23,10 +23,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { MatMenuModule} from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   imports: [
     HttpClientModule,
+    ScrollingModule,
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
@@ -67,6 +69,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatDividerModule,
     MatListModule,
+    ScrollingModule,
     MatTreeModule,
     MatDialogModule,
     MatSnackBarModule,

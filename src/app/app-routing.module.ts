@@ -21,6 +21,10 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
+    path: 'techreq',
+    component: VeiwSheetsComponent
+  },
+  {
     path: 'dashboard',
     component: DashboardComponent,
     children:[

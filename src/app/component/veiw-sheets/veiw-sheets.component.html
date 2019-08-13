@@ -1,4 +1,5 @@
-<div fxLayout="column" class="main-div" fxLayoutGap="5%">
+<div fxLayout="column" class="main-div" fxLayoutGap="1%">
+    <div fxLayout="column" fxLayoutGap="5%">
 <div  fxLayout="column">
     <div class="heading">Project1</div>
     <div  fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="1%">
@@ -9,33 +10,43 @@
         <mat-icon class="file-icon">description</mat-icon>
         <div class="tech">Tech Req.Sheet1</div>
        <div class="share" fxLayoutAlign="end end">
-           <mat-icon class="share-icon">share</mat-icon>
+           <mat-icon class="share-icon" >share</mat-icon>
         </div>
     </div>
 </div>
-<div fxLayout="column">
-        <div fxLayout="row" fxFlex="100">
-<div fxFlex="2" class="header" fxLayoutAlign="center center">Sr</div>
-<div fxFlex="16.5" class="header">Header1</div>
-<div fxFlex="16.5" class="header">Header2</div>
-<div fxFlex="16.5" class="header">Header3</div>
-<div fxFlex="16.5" class="header">Header4</div>
-<div fxFlex="16" class="header">Header5</div>
-<div fxFlex="16" class="header">Header5</div>
-        </div>
-        <div fxLayout="row" fxFlex="100" *ngFor="let i of num,let i=index">
-                <div fxFlex="2" class="srno" fxLayoutAlign="center center">{{i+1}}</div>
-                <div fxFlex="16.5" class="row"><input class="input"></div>
-                <div fxFlex="16.5" class="row"><input class="input"></div>
-                <div fxFlex="16.5" class="row"><input class="input"></div>
-                <div fxFlex="16.5" class="row"><input class="input"></div>
-                <div fxFlex="16" class="row"><input class="input"></div>
-                <div fxFlex="16" class="row"><input class="input"></div>
-                        </div>
+
+<div fxLayout="column" style="overflow-y:scroll;height: 222px; margin-right: 40px;width:100%">
+   
+    <div fxLayout="row" fxFlex="100%"  style="width:fit-content">
+        <div  class="header-sr" fxLayoutAlign="center center">Sr</div>
+        <div class="header" *ngFor="let head of headers,let j=index">
+        <div fxLayoutAlign="center center">Header{{j+1}}</div>
     </div>
-    <div fxLayout="row" fxLayoutGap="1%">
-            <button mat-raised-button disabled>Add</button>
-            <div fxLayoutAlign="center center" class="count"> 10 </div>
-            <div fxLayoutAlign="center center">More rows on button</div>
+      
+                </div>
+                <div fxLayout="row" *ngFor="let i of num,let j=index" fxFlex="100%" style="width:fit-content" >
+                        <div  class="srno" fxLayoutAlign="center center">{{j+1}}</div>
+                        <div  class="row" *ngFor="let row of rows">
+                        <div><input class="input"></div>
+                    </div>
+                       
+                       </div>
+                 
     </div>
 </div>
+
+<div fxLayout="row" fxLayoutGap="1%">
+    <button mat-button (click)="addRows(arrayLength)" class="add-button">Add</button>
+    <div fxLayoutAlign="center center" class="count"><input class="num-input" [(ngModel)]="arrayLength" required>
+        
+</div>
+    <div fxLayoutAlign="center center" class="more-rows">More rows on button</div>
+</div>
+</div>
+
+
+
+
+
+  
+  
