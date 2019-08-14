@@ -24,6 +24,7 @@ import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { MatMenuModule} from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import {DropdownModule} from 'primeng/dropdown';
 
 @NgModule({
   imports: [
@@ -55,8 +56,9 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    DropdownModule
+    ],
 
   exports: [
     MatFormFieldModule,
@@ -86,7 +88,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    DropdownModule
 
   ]
 

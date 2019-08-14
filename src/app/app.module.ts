@@ -17,6 +17,9 @@ import { DashboardBoxComponent } from "./component/dashboard-box/dashboard-box.c
 import { ToolbarComponent } from "./component/toolbar/toolbar.component";
 import { AddFundoosheetComponent } from "./component/add-fundoosheet/add-fundoosheet.component";
 import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fundoosheet.component";
+import { AddSheetdialogBoxComponent } from "./component/add-sheetdialog-box/add-sheetdialog-box.component";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,9 @@ import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fund
     DashboardBoxComponent,
     ToolbarComponent,
     AddFundoosheetComponent,
-    ShowFundoosheetComponent
+    ShowFundoosheetComponent,
+    AddSheetdialogBoxComponent
+  
   ],
   imports: [
     BrowserAnimationsModule,
@@ -40,6 +45,8 @@ import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fund
     AppRoutingModule,
     FlexLayoutModule,
     Material
+  
+    
   ],
   providers: [],
   entryComponents : [AddProjectdialogBoxComponent],

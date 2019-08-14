@@ -1,5 +1,5 @@
-<div fxLayout="row wrap" fxLayoutAlign="start center">
-  <div *ngFor="let items of sheets">
+ <div fxLayout="row wrap" fxLayoutAlign="start center"  fxLayoutGap="20px">
+  <div *ngFor="let items of sheets" >
     <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv">
       <div fxLayout="column" fxLayoutAlign="space-evenly" fxLayoutGap="20px">
         <div fxLayout="row" fxLayoutAlign="start center">
@@ -14,19 +14,27 @@
           </div>
           <div class="text"> Add Header </div>
         </div>
-
-        <div fxLayout="row" *ngIf="popup">
+       
+        <div *ngIf="popup">
          
             <div fxLayout="row" fxLayoutAlign="start center">
-              <div fxLayout="row" fxLayoutAlign="space-around center"> 
+              <div fxLayout="row" fxLayoutAlign="space-evenly center"> 
                 <input matInput type="text" placeholder="  Enter header1" class="input" style=" font-size: 14px;" />
               </div>
 
               <div class="maticon2" onclick="openDialogue()">
                 <mat-icon matSuffix>more_horiz</mat-icon>
               </div>
+           
+        
+
+           
             </div>
-          
+            <div fxLayout="row" fxLayoutAlign="end center" class = "addProjectButton">
+                <button mat-button class = "sideList">Cancel</button>
+                <button mat-flat-button color="primary"  class = "sideList1" >Add</button>
+            </div>
+
         </div> 
       </div>
     </div>
