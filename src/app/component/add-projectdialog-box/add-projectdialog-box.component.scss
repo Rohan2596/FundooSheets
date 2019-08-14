@@ -3,22 +3,29 @@
 
 .name
 {
-    height: 47px;
-    margin-bottom: 27px;
+    height: 40px;
+    margin-bottom: 43px;
 }
 
 .mat-form-field 
 {
-    font-size: $_inputbox_font_size;
     width: 421px;
+}
+
+
+input.mat-input-element 
+{
+    font-size: $_inputbox_font_size;
     font-family: $font_family;
     color: $_input_font_color;
 }
 
 textarea.mat-input-element
 { 
-    height: 74px;
-    // color: $primary_color;
+    font-size: $_inputbox_font_size;
+    font-family: $font_family;
+    color: $_input_font_color;
+    height: 70px;
 }
 
 .mat-raised-button {
@@ -34,6 +41,12 @@ textarea.mat-input-element
     overflow: visible;
     font-family: $font_family;
     background-color:  $primary_color;
+    transition: all .2s ease-in-out; 
+}
+     
+.mat-raised-button:hover 
+{ 
+    transform: scale(1.1); 
 }
 
 .mat-button{
@@ -49,8 +62,19 @@ textarea.mat-input-element
     overflow: visible;
     font-family: $font_family;
     margin-left: 134px;
+    transition: all .2s ease-in-out;
+}
+
+.mat-button:hover 
+{ 
+    transform: scale(1.1); 
 }
 
 :host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
     color:  $primary_color !important;
 }
+
+.mat-error {
+    display: inline-grid;
+}
+
