@@ -8,6 +8,8 @@ import { AddSheetService } from '../../services/add-sheet.service';
 })
 export class ShowFundoosheetComponent implements OnInit {
   public sheets: any;
+  private popup: boolean;
+  i:any;
   constructor(private addSheetService:AddSheetService) { }
 
   ngOnInit() {
@@ -23,5 +25,13 @@ export class ShowFundoosheetComponent implements OnInit {
     );
   }
 
+  onPopup() {
+    this.popup = true;
+    console.log("in pop up",this.popup)
+  }
+
+  onIncrement(){
+    this.i = this.i+1;
+  }
 
 }

@@ -1,24 +1,34 @@
 <div fxLayout="row wrap" fxLayoutAlign="start center">
   <div *ngFor="let items of sheets">
-    <div fxLayout="row" class="mainDiv">
+    <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv">
       <div fxLayout="column" fxLayoutAlign="space-evenly" fxLayoutGap="20px">
-      <div fxLayout="row" fxLayoutAlign="space-evenly"  >
-      <div class="nameInput"> {{items.sheetName}}</div>
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <div class="nameInput"> {{items.sheetName}}</div>
+          <div fxLayout="row" fxLayoutAlign="end" class="maticon3">
+            <mat-icon matSuffix>more_horiz</mat-icon>
+          </div>
+        </div>
+        <div fxLayout="row" *ngIf="!popup" (click)="onPopup()">
+          <div class="maticon1">
+            <mat-icon>add</mat-icon>
+          </div>
+          <div class="text"> Add Header </div>
+        </div>
 
+        <div fxLayout="row" *ngIf="popup">
+         
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <div fxLayout="row" fxLayoutAlign="space-around center"> 
+                <input matInput type="text" placeholder="  Enter header1" class="input" style=" font-size: 14px;" />
+              </div>
 
-      <div fxLayout="row" fxLayoutAlign="end">
-        <img src="../../../assets/images/roundmore.svg" class="image">
+              <div class="maticon2" onclick="openDialogue()">
+                <mat-icon matSuffix>more_horiz</mat-icon>
+              </div>
+            </div>
+          
+        </div> 
       </div>
     </div>
-    <div fxLayout="row" >
-    <div  class="mat-icon"><mat-icon>add</mat-icon></div>
-    <div> Add </div>
   </div>
-  </div>
-     
-
-    </div>
-    
-  </div>
-  
 </div>

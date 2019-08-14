@@ -15,7 +15,7 @@ export class AddFundoosheetComponent implements OnInit {
   }
 
   onPopup() {
- 
+
     this.popup = true;
     console.log("in pop up",this.popup)
   }
