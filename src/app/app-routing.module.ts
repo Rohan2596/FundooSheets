@@ -10,6 +10,9 @@ import { ForgotPasswordComponent } from './component/forgot-password/forgot-pass
 import { ResetPasswordComponent } from './component/reset-password/reset-password.component';
 import { DashboardBoxComponent } from './component/dashboard-box/dashboard-box.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
+import { AddFundoosheetComponent } from "./component/add-fundoosheet/add-fundoosheet.component";
+import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fundoosheet.component";
+import { AddSheetdialogBoxComponent } from './component/add-sheetdialog-box/add-sheetdialog-box.component';
 
 const routes: Routes = [
   {
@@ -32,6 +35,7 @@ const routes: Routes = [
         path:'dashboardbox',
         component:DashboardBoxComponent
       }
+      
     ]
   },
   {
@@ -45,6 +49,18 @@ const routes: Routes = [
   {
     path: 'addprojects',
     component: AddProjectComponent
+  },
+  {
+    path: 'fundooSheet',
+    component: AddFundoosheetComponent
+  },
+  {
+    path: 'showSheet',
+    component: ShowFundoosheetComponent
+  },
+  {
+    path: 'dialogSheet',
+    component: AddSheetdialogBoxComponent
   },
   {
     path:'dashboardbox',
