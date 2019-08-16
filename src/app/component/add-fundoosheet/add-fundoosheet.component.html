@@ -1,0 +1,48 @@
+<div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="50px">
+
+    <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv">
+
+        <div fxLayout="row" fxLayoutAlign="center center">
+
+            <a *ngIf="!popup" (click)="onPopup()" class="margin">
+                <mat-icon matPrefix class="icon">add</mat-icon> &nbsp;
+                Add fundooSheet
+            </a>
+        </div>
+        <div *ngIf="popup">
+            <!-- <div *ngFor="let tem of c"> -->
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <a class=mainDiv1>
+                    <div fxLayout="row" fxLayoutAlign="center center">
+                        <input matInput type="text" placeholder=" Enter sheet name" class="input"
+                            style=" font-size: 14px;" />
+
+                    </div>
+
+                    <div fxLayout="row" fxLayoutAlign="center center">
+                        <input matInput type="text" placeholder=" Description" class="input1"
+                            style=" font-size: 14px;" />
+
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="30px" class = "button-cancel"> 
+                        <button mat-button class = "sideList">Cancel</button>
+                        <button mat-flat-button color="primary"  class = "sideList1" >Add</button>
+                    </div>
+                       
+                   
+                </a>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <br>
+    <div fxLayout="row" class="mainDiv" *ngIf="popup" (click)="onPopup()">
+        <div fxLayout="row" fxLayoutAlign="start center">
+
+            <a class="margin">
+                <mat-icon class="icon">add</mat-icon>&nbsp;
+                Add fundooSheet
+            </a>
+        </div>
+    </div>
+</div>

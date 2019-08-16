@@ -1,0 +1,150 @@
+@import '../../scss/constant.scss';
+@import '../../scss/color.scss';
+
+.mainDiv{
+    
+        background-color: #f5f5f5;
+        width:250px;
+        max-height:154px;
+        border-radius: 5px;
+        border: 1px solid #F5F5F5;
+
+}
+
+.nameInput
+{
+    font-family: $font_family;
+    font-size:$_cardheading_font_size;
+    color: $_input_font_color;
+    padding-left: 10px;
+}
+
+.maticon3{
+    padding-left: 81px;
+    margin-top: 6px;
+    font-size: 24px;
+    color: #666D70;
+}
+
+.demo{
+padding-left: 10px;
+color: gray;
+font-size: 17px;
+}
+
+.maticon1{
+    color: #ACADAD;
+    height: 24px;
+    width: 24px;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.text {
+    font-size: $_subtext_font_size;
+    color: #ACADAD;
+    margin-left: -6px;
+}
+
+.mainDiv1{
+    background-color: #F5F5F5;
+    width:250px;
+    height:153px;
+    margin-top: 135px;
+}
+
+.input
+{
+    width: 237px;
+    height: 29px;
+    border:transparent;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    margin-left: 5px;
+    
+}
+
+:host::ng-deep .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+}
+
+:host::ng-deep [_nghost-oms-c1] .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    margin-left: -24px;
+    text-align: left;
+    font: Regular 14px/17px Lato;
+    letter-spacing: 0;
+    color: #ACADAD;
+    opacity: 1;
+}
+
+.maticon2{
+    margin-left: -32px;
+    height: 24px;
+    width: 24px;
+    font-size: 21px;
+    color: #ACADAD;
+}
+
+.mat-raised-button {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    min-width:74px;
+    min-height: 24px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: $font_family;
+    background-color:  $primary_color;
+}
+
+.sideList{
+    margin: 0;
+    font-size:$_subtext_font_size;
+    color: $_input_font_color;
+    align-content: center;
+   
+
+
+}
+
+.sideList1{
+    margin: 0;
+    font-size:$_subtext_font_size;
+    color:$button_font_color;
+    align-content: center;
+    height: 30px;
+    width: 75px;
+
+}
+.addProjectButton{
+    margin-top: 3px;
+}
