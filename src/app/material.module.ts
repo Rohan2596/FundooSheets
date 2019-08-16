@@ -77,7 +77,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     MatTabsModule,
     MatTooltipModule,
     FlexLayoutModule,
-  FlexLayoutModule,
+    FlexLayoutModule,
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
