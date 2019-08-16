@@ -78,7 +78,7 @@ import {DropdownModule} from 'primeng/dropdown';
     MatTabsModule,
     MatTooltipModule,
     FlexLayoutModule,
-  FlexLayoutModule,
+    FlexLayoutModule,
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,
