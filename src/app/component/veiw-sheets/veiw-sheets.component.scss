@@ -1,29 +1,29 @@
 @import'../../scss/constant.scss';
 @import'../../scss/color.scss';
 .heading
-{ font-size:15px;
-    color:#40494D;
+{ font-size:$_inputbox_font_size;
+    color:$_input_font_color;
     font-family:$font_family;
-    font-weight:600;
-   
-}
+    font-weight:$_heading_font_weight;
+   }
 
 .main-div
 {
     padding:1%;
 }
+
 .input
 {
-    border:none;
-    outline:none;
-    height: 62%;
-    font-size: 12px;
-    color: #737475;
+    color: $_input_font_color;
     font-size: 12px;
     font-family: Lato;
-width:90px;
-height: 12px;
-    margin-left:2%;
+    min-width:inherit;
+    width: -webkit-fill-available;
+    overflow: auto;
+min-height: 12px;
+padding: 3px;
+outline: none;
+   
 }
 .cancel
 {
@@ -34,7 +34,7 @@ height: 12px;
     color:#C0C0C0;
     padding-left:3%;
     padding-right:3%; 
-    background-color: #FFFFFF;  
+    background-color:$background_color;  
 }
 :host::ng-deep .mat-stroked-button {
     border: 1px solid #707070;
@@ -44,7 +44,7 @@ height: 12px;
 .file-icon
 {
     font-size: 20px;
-    color: #737475;
+    color: $_input_font_color;
 
 }
 .share{
@@ -54,57 +54,60 @@ height: 12px;
 }
 .share-icon
 {
-    font-size: 14px;
+    font-size: $_inputbox_font_size;
    text-align:center;
-    color:#737475;
+    color:$_input_font_color;
     margin-top:2px;
     margin-bottom: -4px;
 }
 .tech
 {
-    font-size:15px;
+    font-size:$_inputbox_font_size;
     color:#40494D;
     font-family:$font_family;
-    font-weight:600;
+    font-weight:$_heading_font_weight;
 }
 .header-sr
 {
     border:1px solid #C0C0C0;
     background-color: #F8F9FA;
-    color:#737475;
+    color:$_input_font_color;
     font-size:12px;
-    font-weight: 600;
-    width: 22px;
+    font-weight: $_heading_font_weight;
+   
     font-family:$font_family;
 }
+
 .header
 {
     border:1px solid #C0C0C0;
     background-color: #F8F9FA;
-    color:#737475;
+    color:$_input_font_color;
     font-size:12px;
     position: relative;
-    font-weight: 600;
+    font-weight: $_heading_font_weight;
     font-family:$font_family;
+    height: 23px;
 //    padding:2px;
-   width: 10px;
-    width:93.69px;
+  display: flex;
+  justify-content: center;
+    min-width:160px;
 //    padding-left: 1%;
   
 }
 .srno{
     border:1px solid #C0C0C0;
-    background-color: #F8F9FA;
-    color:#737475;
+    background-color:$background_color;
+    color:$_input_font_color;
     font-size:12px;
-    width:22px;
+  
     font-family:$font_family;
 }
 .row
 {
     border:0.2px solid #C0C0C0;
     border-top: 0px;
-    width: 95.3px;
+    min-width:160px;
     //width:15px;
 }
 :host::ng-deep .mat-raised-button {
@@ -141,13 +144,13 @@ height: 12px;
     width: 62%;
 outline:none;
 border:none;
-color:#40494D;
-font-size: 15px;
+color:$_input_font_color;
+font-size: $_inputbox_font_size;
 }
 .more-rows{
-    font-size: 15px;
+    font-size: $_inputbox_font_size;
     font-family: lato;
-    color: #40494D;
+    color: $_input_font_color;
 }
 :host::ng-deep .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
     position: relative;
@@ -170,9 +173,9 @@ font-size: 15px;
 }
 .add-button
 {
-    background-color:#F5F5F5;
-    font-size: 15px;
-    color:#40494D;
+    background-color:$button_font_color;
+    font-size: $_inputbox_font_size;
+    color:$_input_font_color;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -190,9 +193,3 @@ font-size: 15px;
     background: #ccc;
     }
 
-
-
-
-
- 
-      
