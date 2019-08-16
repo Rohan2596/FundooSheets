@@ -34,12 +34,11 @@
 :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
     overflow: visible;
    padding: 0.6em 0 0.6em 0;
-   // width: 251%;
+
     }
     
 :host ::ng-deep .mat-form-field-infix {
     border-top-width: .35375em;
-    //width: 251%;
     }
 
    
@@ -89,12 +88,17 @@
     border-radius: 4px;
     overflow: visible;
     font-family: $font_family;
-    margin-left: 134px;
+    border: 1px solid #DADCE0;
 }
 
 .spacing{
     margin-top: 32px;
 }
+
 .spacing1{
     margin-top: 15px;
+}
+
+.margin{
+    margin-left: 54px;
 }

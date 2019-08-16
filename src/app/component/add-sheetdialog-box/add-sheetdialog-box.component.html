@@ -21,9 +21,10 @@
             <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Select</mat-label>
+
                     <mat-select>
-                        <span>dvsdfvsvs</span>
-                        <span>dvsdfvsvs</span>
+                        <mat-option value="option">Option1</mat-option>
+                        <mat-option value="option">Option2</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
@@ -36,9 +37,10 @@
             <div>
                 <mat-form-field appearance="outline">
                     <mat-label>Select</mat-label>
+
                     <mat-select>
-                        <span>dvsdfvsvs</span>
-                        <span>dvsdfvsvs</span>
+                        <mat-option value="option">Option1</mat-option>
+                        <mat-option value="option">Option2</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
@@ -52,21 +54,22 @@
             <mat-checkbox><span class="text1">No</span></mat-checkbox>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="140px" class = "spacing1">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="115px" class="spacing1">
             <div>
                 <span class="text">Required: </span>
             </div>
-            <mat-checkbox><span class="text1">Yes</span></mat-checkbox>
-            <mat-checkbox><span class="text1">No</span></mat-checkbox>
+            <div class="margin" fxLayoutGap="104px">
+                <mat-checkbox><span class="text1">Yes</span></mat-checkbox>
+                <mat-checkbox><span class="text1">No</span></mat-checkbox>
+            </div>
         </div>
-        <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="30px" class = "spacing" >
+        <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="30px" class="spacing">
             <div fxLayout="row" fxLayoutAlign="center center">
                 <button mat-button>Cancel</button>
             </div>
 
             <div>
-                <button mat-raised-button color="primary" 
-                    routerLink='/dashboard'>Save</button>
+                <button mat-raised-button color="primary" routerLink='/dashboard'>Save</button>
             </div>
         </div>
 
