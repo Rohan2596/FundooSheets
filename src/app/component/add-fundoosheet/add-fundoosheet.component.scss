@@ -28,7 +28,8 @@ cursor: pointer;
     font-size:$_cardheading_font_size;
     color: $_input_font_color;
     align-content: center;
-    direction: ltr
+    direction: ltr;
+    cursor: pointer;
 }
 
 
@@ -159,6 +160,7 @@ cursor: pointer;
 .spacing{
     margin-top: 5px;
     margin-right: 14px;
+
 }
 
 .mainDiv1{
@@ -187,12 +189,6 @@ cursor: pointer;
     cursor: pointer;
 }
 
-.demo{
-padding-left: 10px;
-color: gray;
-font-size: 17px;
-}
-
 .maticon1{
     color: #ACADAD;
     height: 24px;
@@ -205,7 +201,8 @@ font-size: 17px;
 .text {
     font-size: $_subtext_font_size;
     color: #ACADAD;
-    margin-left: -6px;
+   // margin-left: -6px;
+    cursor: pointer;
 }
 
 .mainDiv1{
@@ -213,7 +210,7 @@ font-size: 17px;
     width:250px;
     height:153px;
     margin-top: 10px;
-    padding: 2px;
+    padding: 5px;
 }
 
 .input
@@ -267,24 +264,24 @@ font-size: 17px;
 }
 
 .maticon2{
-    margin-left: -62px;
-    margin-top: -11px;
+   // margin-left: -62px;
+    margin-top: 7px;
     height: 24px;
     width: 24px;
-    font-size: 21px;
+    font-size: 16px;
     cursor: pointer;
     color: #ACADAD;
 }
 
-.mat-raised-button {
+:host::ng-deep .mat-raised-button {
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
-    min-width:74px;
-    min-height: 24px;
+    min-width:22px;
+    line-height: 20px;
     border-radius: 4px;
     overflow: visible;
     font-family: $font_family;
@@ -296,20 +293,49 @@ font-size: 17px;
     font-size:$_subtext_font_size;
     color: $_input_font_color;
     align-content: center;
-   
-
+    line-height: 2px;
 
 }
 
 .button-add{
-    margin: 0;
+   
     font-size:$_subtext_font_size;
     color:$button_font_color;
     align-content: center;
-    height: 30px;
-    width: 75px;
+  
 
 }
 .addProjectButton{
     margin-top: 3px;
+}
+
+
+:host::ng-deep .input[_ngcontent-opo-c1] {
+    width: 237px;
+    height: 29px;
+    border: transparent;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    margin-left: 5px;
+    outline-color: white;
+}
+
+.bgcolor{
+    background-color: white;
+}
+
+:host::ng-deep .mat-button[_ngcontent-our-c5] {
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    min-width:22px;
+    line-height: 20px;
+    border-radius: 4px;
+    overflow: visible;
+    font-family: Lato;
+    border: 1px solid #DADCE0;
 }

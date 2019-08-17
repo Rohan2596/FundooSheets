@@ -2,13 +2,11 @@
   <div *ngIf="!popup1">
     <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv">
 
-      <div fxLayout="row" fxLayoutAlign="center center">
+      <a *ngIf="!popup" (click)="onPopup()" class="margin">
+        <mat-icon matPrefix class="icon">add</mat-icon> &nbsp;
+        Add fundooSheet
+      </a>
 
-        <a *ngIf="!popup" (click)="onPopup()" class="margin">
-          <mat-icon matPrefix class="icon">add</mat-icon> &nbsp;
-          Add fundooSheet
-        </a>
-      </div>
       <div *ngIf="popup">
         <!-- <div *ngFor="let tem of c"> -->
         <div fxLayout="row" fxLayoutAlign="center center">
@@ -20,31 +18,22 @@
 
             <div fxLayout="row" fxLayoutAlign="center center">
               <input matInput type="text" placeholder=" Description" class="input1" style=" font-size: 14px;" />
-
             </div>
 
-
-            <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="30px" class="spacing">
+            <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="20px" class="spacing">
               <div fxLayout="row" fxLayoutAlign="center center">
-                <button mat-button>Cancel</button>
+                <button mat-button class="button-cancel">Cancel</button>
               </div>
 
               <div *ngIf="!popup1" (click)="onPopup1()">
-                <button mat-raised-button color="primary">Add</button>
+                <button mat-raised-button color="primary" class="button-add">Add</button>
               </div>
-
-
-
-
             </div>
           </a>
         </div>
-
-
         <!-- </div> -->
       </div>
     </div>
-
   </div>
 
   <div *ngIf="popup1">
@@ -52,45 +41,35 @@
     <!-- here new componenet merging-->
     <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
       <div *ngFor="let items of sheets">
-        <div fxLayout="row" fxLayoutAlign="space-between center" class="mainDiv1">
-          <div fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="20px">
-            <div fxLayout="row" fxLayoutAlign="space-between center">
-              <div class="nameInput"> {{items.sheetName}}</div>
-              <div fxLayout="row" fxLayoutAlign="space-between center" class="maticon3">
-                <button mat-icon-button class="maticon2">
-                  <mat-icon matSuffix>more_horiz</mat-icon>
-                </button>
-              </div>
+        <div fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="20px" class="mainDiv1">
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="nameInput"> {{items.sheetName}}</div>
+            <div fxLayout="row" fxLayoutAlign="space-between" class="maticon3">
+
+              <mat-icon matSuffix class="maticon2">more_horiz</mat-icon>
+
             </div>
-            <div fxLayout="row" *ngIf="!popup3" (click)="onPopup3()">
-              <div class="maticon1">
-                <mat-icon>add</mat-icon>
-              </div>
-              <div class="text"> Add Header </div>
+          </div>
+          <div fxLayout="row" *ngIf="!popup3" (click)="onPopup3()">
+            <div class="maticon1">
+              <mat-icon>add</mat-icon>
             </div>
+            <div class="text"> Add Header </div>
+          </div>
 
-            <div *ngIf="popup3">
-
-              <div fxLayout="row" fxLayoutAlign="start center">
-                <div fxLayout="row" fxLayoutAlign="space-evenly center">
-                  <input matInput type="text" placeholder="  Enter header1" class="input" style=" font-size: 14px;" />
-                  <div fxLayout="row" fxLayoutAlign="end">
-                    <button mat-icon-button class="maticon2" (click)="openDialogue()">
-                      <mat-icon matSuffix>more_horiz</mat-icon>
-                    </button>
-                  </div>
-
-                </div>
-
-
-
-
-              </div>
-              <div fxLayout="row" fxLayoutAlign="end center" class="addProjectButton">
+          <div *ngIf="popup3">
+            <div fxLayout="row" fxLayoutAlign="space-between" class="bgcolor">
+              <input matInput type="text" placeholder="  Enter header1" class="input" style=" font-size: 14px;" />
+              <mat-icon matSuffix class="maticon2" (click)="openDialogue()">more_horiz</mat-icon>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="20px" class="addProjectButton">
+              <div fxLayout="row" fxLayoutAlign="center center">
                 <button mat-button class="button-cancel">Cancel</button>
-                <button mat-flat-button color="primary" class="button-add">Add</button>
               </div>
 
+              <div fxLayout="row" fxLayoutAlign="center center">
+                <button mat-raised-button color="primary" class="button-add">Add</button>
+              </div>
             </div>
           </div>
         </div>
@@ -98,11 +77,9 @@
     </div>
 
     <!-- end of show - sheet-->
-
-
   </div>
-  <div fxLayout="row" class="mainDiv" *ngIf="popup" (click)="onPopup()">
-    <div fxLayout="row" fxLayoutAlign="start center">
+  <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv" *ngIf="popup" (click)="onPopup()">
+    <div fxLayout="column" fxLayoutAlign="start center">
 
       <a class="margin">
         <mat-icon class="icon">add</mat-icon>&nbsp;

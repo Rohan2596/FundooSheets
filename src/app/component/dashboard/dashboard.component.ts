@@ -12,4 +12,16 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  data: Array<any> = [{
+    text: 'My Profile'
+}, {
+    text: 'Friend Requests'
+}, {
+    text: 'Account Settings'
+}, {
+    text: 'Support'
+}, {
+    text: 'Log Out'
+}];
+
 }
