@@ -57,7 +57,7 @@ export class AddFundoosheetComponent implements OnInit {
   openDialogue(): void {
     console.log("jsdcgakdjcgakj")
     const dialogRef = this.matDialog.open(AddSheetdialogBoxComponent, {
-      width: '60%', height: '67%'
+      width: '55%', height: '60%'
 
     });
     dialogRef.afterClosed().subscribe(result => {
