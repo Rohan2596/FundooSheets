@@ -18,35 +18,22 @@
 
             <div fxLayout="row" fxLayoutAlign="center center">
               <input matInput type="text" placeholder=" Description" class="input1" style=" font-size: 14px;" />
-
             </div>
 
-
-            <!-- <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="30px" class="spacing">
+            <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="20px" class="spacing">
               <div fxLayout="row" fxLayoutAlign="center center">
-                <button mat-button>Cancel</button>
+                <button mat-button class="button-cancel">Cancel</button>
               </div>
 
               <div *ngIf="!popup1" (click)="onPopup1()">
-                <button mat-raised-button color="primary">Add</button>
+                <button mat-raised-button color="primary" class="button-add">Add</button>
               </div>
-
-            </div> -->
-            <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="20px" class="spacing">
-                <div fxLayout="row" fxLayoutAlign="center center">
-                  <button mat-button class="button-cancel">Cancel</button>
-                </div>
-  
-                <div *ngIf="!popup1" (click)="onPopup1()">
-                  <button mat-raised-button color="primary" class="button-add">Add</button>
-                </div>
-              </div>
+            </div>
           </a>
         </div>
         <!-- </div> -->
       </div>
     </div>
-
   </div>
 
   <div *ngIf="popup1">
@@ -73,12 +60,8 @@
           <div *ngIf="popup3">
             <div fxLayout="row" fxLayoutAlign="space-between" class="bgcolor">
               <input matInput type="text" placeholder="  Enter header1" class="input" style=" font-size: 14px;" />
-
               <mat-icon matSuffix class="maticon2" (click)="openDialogue()">more_horiz</mat-icon>
-
             </div>
-
-
             <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="20px" class="addProjectButton">
               <div fxLayout="row" fxLayoutAlign="center center">
                 <button mat-button class="button-cancel">Cancel</button>
@@ -88,17 +71,12 @@
                 <button mat-raised-button color="primary" class="button-add">Add</button>
               </div>
             </div>
-
-
-
           </div>
         </div>
       </div>
     </div>
 
     <!-- end of show - sheet-->
-
-
   </div>
   <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv" *ngIf="popup" (click)="onPopup()">
     <div fxLayout="column" fxLayoutAlign="start center">
