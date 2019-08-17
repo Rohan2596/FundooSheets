@@ -1,4 +1,4 @@
-<div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="50px">
+<div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="50px">
   <div *ngIf="!popup1">
     <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv">
 
@@ -78,13 +78,15 @@
 
     <!-- end of show - sheet-->
   </div>
-  <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv" *ngIf="popup" (click)="onPopup()">
-    <div fxLayout="column" fxLayoutAlign="start start">
 
-      <a class="margin">
-        <mat-icon class="icon">add</mat-icon>&nbsp;
-        Add fundooSheet
-      </a>
-    </div>
-  </div>
+  <div fxLayout="row" fxLayoutAlign="start center" class="mainDiv" *ngIf="popup" (click)="onPopup()">
+     
+  
+        <a class="margin">
+          <mat-icon class="icon">add</mat-icon>&nbsp;
+          Add fundooSheet
+        </a>
+   
+ </div>
+ 
 </div>
