@@ -1,26 +1,26 @@
-<div fxFill fxLayout="row" fxLayoutAlign="center center">
-    <mat-card>
+<div fxLayout="row" fxLayoutAlign="start center">
+   <div fxLayout="column" fxLaoutAlign = "start center">
         <div fxLayout="row" fxLayoutAlign="space-between start" class="card">
 
             <div>
                 <span>Header Validation</span>
             </div>
 
-            <div>
-                <button mat-icon-button matTooltip="close">
+            
+                <button mat-icon-button  matTooltip="close" (click)="onNoClick()"> 
                     <mat-icon>clear</mat-icon>
                 </button>
-            </div>
+            
 
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="200px">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="120px">
             <div>
                 <span class="text">Type: </span>
             </div>
             <div>
                 <mat-form-field appearance="outline">
-                    <mat-label>Select</mat-label>
+                    <mat-label>Type</mat-label>
 
                     <mat-select>
                         <mat-option value="option">Option1</mat-option>
@@ -30,13 +30,13 @@
             </div>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="183px">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="103px" class = "topmargin">
             <div>
                 <span class="text">Format: </span>
             </div>
             <div>
                 <mat-form-field appearance="outline">
-                    <mat-label>Select</mat-label>
+                    <mat-label>Format</mat-label>
 
                     <mat-select>
                         <mat-option value="option">Option1</mat-option>
@@ -46,32 +46,32 @@
             </div>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="105px">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="25px">
             <div>
                 <span class="text">Allow suggestions: </span>
             </div>
-            <mat-checkbox><span class="text1">Yes</span></mat-checkbox>
-            <mat-checkbox><span class="text1">No</span></mat-checkbox>
+            <div fxLayoutGap="90px">
+                    <mat-checkbox><span class="text1">Yes</span></mat-checkbox>
+                    <mat-checkbox><span class="text1">No</span></mat-checkbox>
+                </div>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="115px" class="spacing1">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="35px" class="spacing1">
             <div>
                 <span class="text">Required: </span>
             </div>
-            <div class="margin" fxLayoutGap="104px">
+            <div class="margin" fxLayoutGap="91px">
                 <mat-checkbox><span class="text1">Yes</span></mat-checkbox>
                 <mat-checkbox><span class="text1">No</span></mat-checkbox>
             </div>
         </div>
-        <div fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="30px" class="spacing">
-            <div fxLayout="row" fxLayoutAlign="center center">
+        <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="30px" class="spacing">
+            
                 <button mat-button>Cancel</button>
-            </div>
+            
 
-            <div>
                 <button mat-raised-button color="primary" routerLink='/dashboard'>Save</button>
-            </div>
+            
         </div>
-
-    </mat-card>
+</div>
 </div>

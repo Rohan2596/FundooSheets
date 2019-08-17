@@ -17,20 +17,21 @@
 
 <div fxLayout="column" style="overflow-y:scroll;height: 222px; margin-right: 40px;width:100%">
    
-    <div fxLayout="row" fxFlex="100%"  style="width:fit-content">
-        <div  class="header-sr" fxLayoutAlign="center center">Sr</div>
-        <div class="header" *ngFor="let head of headers,let j=index">
-        <div fxLayoutAlign="center center">Header{{j+1}}</div>
+    <div fxLayout="row" fxFlex="100" >
+        <div fxFlex="20px"  class="header-sr" fxLayoutAlign="center center">Sr</div>
+        <div fxFlex class="header" *ngFor="let head of headers,let j=index">
+         <div fxLayoutAlign="center center">Header{{j+1}}</div>
+        <!-- <div >Header{{j+1}}</div> -->
     </div>
       
                 </div>
-                <div fxLayout="row" *ngFor="let i of num,let j=index" fxFlex="100%" style="width:fit-content" >
-                        <div  class="srno" fxLayoutAlign="center center">{{j+1}}</div>
-                        <div  class="row" *ngFor="let row of rows">
-                        <div><input class="input"></div>
+                <div fxLayout="row" *ngFor="let i of num,let j=index"   fxFlex="100" >
+                        <div   fxFlex="20px" class="srno" fxLayoutAlign="center center">{{j+1}}</div>
+                        <div  class="row" fxFlex *ngFor="let row of rows">
+                        <div><div class="input" contentEditable></div> </div>
+                        <!--<input  style="white-space:pre-wrap;" class="input">-->
                     </div>
-                       
-                       </div>
+                   </div>
                  
     </div>
 </div>
@@ -44,9 +45,4 @@
 </div>
 </div>
 
-
-
-
-
-  
-  
+ 

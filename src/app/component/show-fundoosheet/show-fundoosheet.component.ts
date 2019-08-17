@@ -8,7 +8,7 @@ import { AddSheetService } from '../../services/add-sheet.service';
 })
 export class ShowFundoosheetComponent implements OnInit {
   public sheets: any;
-  private popup: boolean;
+  private popup3: boolean;
   i:any;
   constructor(private addSheetService:AddSheetService) { }
 
@@ -25,9 +25,9 @@ export class ShowFundoosheetComponent implements OnInit {
     );
   }
 
-  onPopup() {
-    this.popup = true;
-    console.log("in pop up",this.popup)
+  onPopup3() {
+    this.popup3 = true;
+    console.log("in pop up",this.popup3)
   }
 
   onIncrement(){

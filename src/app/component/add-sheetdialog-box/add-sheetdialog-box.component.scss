@@ -92,7 +92,7 @@
 }
 
 .spacing{
-    margin-top: 32px;
+    margin-top: 36px;
 }
 
 .spacing1{
@@ -101,4 +101,15 @@
 
 .margin{
     margin-left: 54px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+
+  font-size: 15px;
+}
+
+.topmargin{
+    margin-top: -11px;
 }

@@ -1,7 +1,7 @@
 @import '../../scss/constant.scss';
 @import '../../scss/color.scss';
 
-.mainDiv{
+.mainDiv1{
     
         background-color: #f5f5f5;
         width:250px;
@@ -126,7 +126,7 @@ font-size: 17px;
     background-color:  $primary_color;
 }
 
-.sideList{
+.button-cancel{
     margin: 0;
     font-size:$_subtext_font_size;
     color: $_input_font_color;
@@ -136,7 +136,7 @@ font-size: 17px;
 
 }
 
-.sideList1{
+.button-add{
     margin: 0;
     font-size:$_subtext_font_size;
     color:$button_font_color;
