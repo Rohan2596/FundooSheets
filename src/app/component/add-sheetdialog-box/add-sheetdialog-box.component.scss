@@ -68,8 +68,8 @@
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
-    min-width: 77px;
-    min-height: 37px;
+    min-width: 75px;
+    min-height: 32px;
     border-radius: 4px;
     overflow: visible;
     font-family: $font_family;
@@ -83,8 +83,8 @@
     display: inline-block;
     vertical-align: baseline;
     text-align: center;
-    min-width: 77px;
-    min-height: 37px;
+    min-width: 45px;
+    min-height: 32px;
     border-radius: 4px;
     overflow: visible;
     font-family: $font_family;
@@ -92,7 +92,7 @@
 }
 
 .spacing{
-    margin-top: 32px;
+    margin-top: 36px;
 }
 
 .spacing1{
@@ -102,3 +102,35 @@
 .margin{
     margin-left: 54px;
 }
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+
+  font-size: 15px;
+}
+
+.topmargin{
+    margin-top: -11px;
+}
+
+.maticonmargin{
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+:host ::ng-deep .mat-icon-button {
+    padding: 0;
+    min-width: 0;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-top: -8px;
+}
+
+:host ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate {
+    background-color:#008CFF !important; /* Red background for example */
+    box-shadow: none;
+    }

@@ -63,7 +63,7 @@ padding-left: 32px;
     position: relative;
     flex: auto;
     min-width: 0;
-    width: 406px;
+    // width: 406px;
   }
 }
 
@@ -80,10 +80,13 @@ padding-left: 32px;
     margin-top: 7px;
 }
 
-.mat-raised-button{
+.divbutton{
   background-color: #008CFF;
   width: 192px;
   margin-top: 7px;
+  line-height: 35px;
+
+  border-radius: 3px;
 }
 
 .matbutton1{
@@ -142,6 +145,23 @@ padding-left: 32px;
 .mat-button1{
   background-color: #E2E2E2;
 }
+
 .routerdiv{
   margin-top: 2%
 }
+
+.dropdowntext{
+  font-size: 13px;
+  color: #FFFFFF;
+  padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+

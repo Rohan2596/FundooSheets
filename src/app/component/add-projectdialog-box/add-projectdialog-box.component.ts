@@ -26,13 +26,13 @@ export class AddProjectdialogBoxComponent implements OnInit {
   }
 
   projectNameError() {
-    return this.projectName.hasError('required') ? 'project name is require' :
+    return this.projectName.hasError('required') ? 'Project Name is required' :
       this.projectName.hasError('minlength') ? 'Minimum length must be 3' :
         '';
   }
 
   descriptionError() {
-    return this.description.hasError('required') ? 'description is require' :
+    return this.description.hasError('required') ? 'Description is required' :
       this.description.hasError('minlength') ? 'Minimum length must be 3' : '';
   }
 
