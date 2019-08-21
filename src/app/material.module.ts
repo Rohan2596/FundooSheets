@@ -26,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
+
+
 @NgModule({
   imports: [
     HttpClientModule,
@@ -57,7 +59,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule
     ],
 
   exports: [
@@ -79,7 +82,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatTabsModule,
     MatTooltipModule,
     FlexLayoutModule,
-  FlexLayoutModule,
+    FlexLayoutModule,
     MatRadioModule,
     MatSelectModule,
     MatExpansionModule,

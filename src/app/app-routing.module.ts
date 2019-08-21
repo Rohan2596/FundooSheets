@@ -53,7 +53,7 @@ const routes: Routes = [
     component: ResetPasswordComponent
   },
   {
-    path: 'projects',
+    path: 'addprojects',
     component: AddProjectComponent
   },
   {
@@ -73,7 +73,7 @@ const routes: Routes = [
     component:DashboardBoxComponent
   },
   {
-    path:'toolbar',
+    path:'projects',
     component:ToolbarComponent,
     children:[
       {
