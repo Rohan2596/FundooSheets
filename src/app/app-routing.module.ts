@@ -13,6 +13,7 @@ import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { AddFundoosheetComponent } from "./component/add-fundoosheet/add-fundoosheet.component";
 import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fundoosheet.component";
 import { AddSheetdialogBoxComponent } from './component/add-sheetdialog-box/add-sheetdialog-box.component';
+import { DemoComponent } from './component/demo/demo.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,11 @@ const routes: Routes = [
     path: 'techreq',
     component: VeiwSheetsComponent
   },
+  {
+    path: 'demo',
+    component: DemoComponent
+  },
+  
   {
     path: 'dashboard',
     component: DashboardComponent,

@@ -18,8 +18,11 @@ import { ToolbarComponent } from "./component/toolbar/toolbar.component";
 import { AddFundoosheetComponent } from "./component/add-fundoosheet/add-fundoosheet.component";
 import { ShowFundoosheetComponent } from "./component/show-fundoosheet/show-fundoosheet.component";
 import { AddSheetdialogBoxComponent } from "./component/add-sheetdialog-box/add-sheetdialog-box.component";
-
-
+import { AngularDraggableModule } from 'angular2-draggable';
+import { ResizableModule } from 'angular-resizable-element';
+import { DemoComponent } from './component/demo/demo.component';
+import { AngularResizedEventModule } from 'angular-resize-event';
+// import { ResizableModule } from 'angular-resizable-element';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,9 @@ import { AddSheetdialogBoxComponent } from "./component/add-sheetdialog-box/add-
     ToolbarComponent,
     AddFundoosheetComponent,
     ShowFundoosheetComponent,
-    AddSheetdialogBoxComponent
+    AddSheetdialogBoxComponent,
+    DemoComponent,
+    
   
   ],
   imports: [
@@ -44,8 +49,11 @@ import { AddSheetdialogBoxComponent } from "./component/add-sheetdialog-box/add-
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
-    Material
-  
+    Material,
+    AngularDraggableModule,
+    ResizableModule,
+    AngularResizedEventModule
+    
     
   ],
   providers: [],

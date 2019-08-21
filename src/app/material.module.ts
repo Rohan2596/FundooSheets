@@ -24,11 +24,12 @@ import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { MatMenuModule} from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import {ScrollingModule} from '@angular/cdk/scrolling';
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   imports: [
     HttpClientModule,
+    MatAutocompleteModule,
     ScrollingModule,
     MatFormFieldModule,
     MatCardModule,
@@ -64,6 +65,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     MatCardModule,
     MatInputModule,
     MatIconModule,
+    MatAutocompleteModule,
     MatChipsModule,
     MatButtonModule,
     MatSidenavModule,
