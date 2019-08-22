@@ -1,112 +1,40 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ResizedEvent } from 'angular-resize-event';
 import { ResizeEvent } from 'angular-resizable-element';
 
   @Component({
     selector: 'demo-demo',
-    styles: [
-      `
-        .rectangle {
-          position: relative;
-          top: 200px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 300px;
-          height: 150px;
-          background-color: #fd4140;
-          border: solid 1px #121621;
-          color: #121621;
-          margin: auto;
-        }
-        .resize-handle-top,
-        .resize-handle-bottom {
-          position: absolute;
-          height: 5px;
-          cursor: row-resize;
-          width: 100%;
-        }
-        .resize-handle-top {
-          top: 0;
-        }
-        .resize-handle-bottom {
-          bottom: 0;
-        }
-        .resize-handle-left,
-        .resize-handle-right {
-          position: absolute;
-          height: 100%;
-          cursor: col-resize;
-          width: 5px;
-        }
-        .resize-handle-left {
-          left: 0;
-        }
-        .resize-handle-right {
-          right: 0;
-        }
-      `
-    ],
-    template: `
-      <div class="text-center">
-        <h1>Drag and pull the edges of the rectangle</h1>
-        <div
-          class="rectangle"
-          [ngStyle]="style"
-          mwlResizable
-          [validateResize]="validate"
-          [enableGhostResize]="true"
-          [resizeSnapGrid]="{ left: 50, right: 50 }"
-          (resizeEnd)="onResizeEnd($event)"
-        >
-          <div
-            class="resize-handle-top"
-            mwlResizeHandle
-            [resizeEdges]="{ top: true }"
-          ></div>
-          <div
-            class="resize-handle-left"
-            mwlResizeHandle
-            [resizeEdges]="{ left: true }"
-          ></div>
-          <div
-            class="resize-handle-right"
-            mwlResizeHandle
-            [resizeEdges]="{ right: true }"
-          ></div>
-          <div
-            class="resize-handle-bottom"
-            mwlResizeHandle
-            [resizeEdges]="{ bottom: true }"
-          ></div>
-        </div>
-      </div>
-    `
+    templateUrl: './demo.component.html',
+    styleUrls: ['./demo.component.scss']
   })
+   
 export class DemoComponent implements OnInit {
-  public style: object = {};
+  name = 'Angular 6';
+  width = 150;
+  x = 100;
+  oldX = 0;
+  grabber = false;
 
-  validate(event: ResizeEvent): boolean {
-    const MIN_DIMENSIONS_PX: number = 50;
-    if (
-      event.rectangle.width &&
-      event.rectangle.height &&
-      (event.rectangle.width < MIN_DIMENSIONS_PX ||
-        event.rectangle.height < MIN_DIMENSIONS_PX)
-    ) {
-      return false;
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent) {
+    if (!this.grabber) {
+        return;
     }
-    return true;
+    this.resizer(event.clientX - this.oldX);
+    this.oldX = event.clientX;
   }
 
-  onResizeEnd(event: ResizeEvent): void {
-    this.style = {
-      position: 'fixed',
-      left: `${event.rectangle.left}px`,
-      top: `${event.rectangle.top}px`,
-      width: `${event.rectangle.width}px`,
-      height: `${event.rectangle.height}px`
-    };
+  @HostListener('document:mouseup', ['$event'])
+  onMouseUp(event: MouseEvent) {
+    this.grabber = false;
+  }
+  resizer(offsetX: number) {
+    this.width -= offsetX;
+  }
+  @HostListener('document:mousedown', ['$event'])
+  onMouseDown(event: MouseEvent) {
+    this.grabber = true;
+    this.oldX = event.clientX;
   }
   constructor() { }
 

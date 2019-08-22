@@ -130,6 +130,7 @@ outline: none;
     border:0.2px solid #C0C0C0;
     border-top: 0px;
     min-width:160px;
+    
     //width:15px;
 }
 :host::ng-deep .mat-raised-button {
@@ -222,7 +223,7 @@ font-size: $_inputbox_font_size;
         width:100%;
     }
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-height: 1080px) {
         .scroll-div {
             max-height: 810px;
         }

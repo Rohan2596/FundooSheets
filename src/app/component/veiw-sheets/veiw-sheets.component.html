@@ -18,8 +18,9 @@
         
         <div fxLayout="column" class="scroll-div">
 
-            <div fxLayout="row" fxFlex="100">
-                <div fxFlex="20px" class="header-sr" fxLayoutAlign="center center">Sr</div>
+            <div fxLayout="row" fxFlex="100" style="position: sticky;top: 0;z-index:1;
+            min-width: fit-content;">
+                <div fxFlex="20px" class="header-sr" fxLayoutAlign="center center"style="position: sticky;top: 0;z-index:1;">Sr</div>
                 <div fxFlex class="header" *ngFor="let head of headers,let j=index">
                     <div fxLayoutAlign="center center"> Header{{j+1}}
                     </div>
@@ -28,7 +29,8 @@
 
             </div>
             <div fxLayout="row" *ngFor="let i of num,let j=index" fxFlex="100">
-                <div fxFlex="20px" class="srno" fxLayoutAlign="center center">{{j+1}}</div>
+                <div style="min-width: fit-content;">
+                <div fxFlex="20px" class="srno" fxLayoutAlign="center center" style="position: sticky;left: 0;z-index:1;">{{j+1}}</div>
                 <div class="row" fxFlex *ngFor="let row of rows;let i = index">
                         <div class="Dropdown" *ngIf="i==0"><mat-select>
                           <mat-option *ngFor="let food of foods" [value]="food.value" style="font-size: 12px;color: #40494D;">
@@ -54,7 +56,7 @@
                     <!--<input  style="white-space:pre-wrap;" class="input">-->
                 </div>
             </div>
-
+        </div>
         </div>
     </div>
 
