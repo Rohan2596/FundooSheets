@@ -22,6 +22,7 @@ import { AngularDraggableModule } from 'angular2-draggable';
 import { ResizableModule } from 'angular-resizable-element';
 import { DemoComponent } from './component/demo/demo.component';
 import { AngularResizedEventModule } from 'angular-resize-event';
+import { ViewsheetTextareaComponent } from './component/viewsheet-textarea/viewsheet-textarea.component';
 // import { ResizableModule } from 'angular-resizable-element';
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AngularResizedEventModule } from 'angular-resize-event';
     ShowFundoosheetComponent,
     AddSheetdialogBoxComponent,
     DemoComponent,
+    ViewsheetTextareaComponent,
     
   
   ],

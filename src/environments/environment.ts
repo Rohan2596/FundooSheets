@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  userApi:"https://fundoosheetuser.incubation.bridgelabz.com/api",
+  sheetsApi:"https://fundoosheetproject.incubation.bridgelabz.com/api"
 };
 
 /*

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
+import { SheetServiceService } from 'src/app/services/sheet-service/sheet-service.service';
+import { MatSnackBar } from '@angular/material';
 export interface Food {
   value: string;
   viewValue: string;
@@ -24,17 +26,19 @@ export const _filter = (opt: string[], value: string): string[] => {
   styleUrls: ['./veiw-sheets.component.scss']
 })
 export class VeiwSheetsComponent implements OnInit {
-  headers = [5,6,7,8,9,6,7,8,6,6,7,8,9,7,8,6,8,7,8,5,6,7,8,9,6,7,8,6,6,7,8,9,7,8,6,8,7,8];
-  rows = [5,6,7,8,9,6,7,8,6,6,7,8,9,7,8,6,8,7,8,5,6,7,8,9,6,7,8,6,6,7,8,9,7,8,6,8,7,8];
-  constructor(private _formBuilder: FormBuilder) { }
+ // headers = [5,6,7,8,9,6,7,8,6,6,7,8,9,7,8,6,8,7,8,5,6,7,8,9,6,7,8,6,6,7,8,9,7,8,6,8,7,8];
+  rows = [5,6,7,8];
+  projectId='5d5ce2996287ad00182dddf4';
+  sheetId='5d60cce05460b5001847494e';
+  headersData=[];
+  objectKey=Object.keys;
+  rowsData=[];
+  constructor(private _formBuilder: FormBuilder,private _snackBar: MatSnackBar,private httpservice: SheetServiceService) { }
   arrayLength=0;
   num : any=[];
   
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+
+
   stateForm: FormGroup = this._formBuilder.group({
     stateGroup: '',
   });
@@ -103,12 +107,13 @@ export class VeiwSheetsComponent implements OnInit {
   stateGroupOptions: Observable<StateGroup[]>; 
 
   ngOnInit() {
-    console.log(this.headers);
-    console.log(this.rows);
-  for(let i =0 ;i <10;i++){
-    this.num.push("");
-  }
-
+    //console.log(this.headers);
+    //console.log(this.rows);
+    this.getHeaders();
+  
+  localStorage.setItem('token-N', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNWNlMTY1ZDE4NjcwMDAxOWRmNjAyYSIsImVtYWlsIjoibmlzaGFyYXV0ODRAZ21haWwuY29tIiwiZXhwIjoxNTcxNjYwNzkzLCJpYXQiOjE1NjY0NzY3OTN9.LhtcA_Khsqt104UtAgnUfH62OYb9ArLcZLSk4ZyyRyg');
+  console.log('token-N',localStorage.getItem('token-N'));
+  
   this.stateGroupOptions = this.stateForm.get('stateGroup')!.valueChanges
       .pipe(
         startWith(''),
@@ -129,6 +134,36 @@ private _filterGroup(value: string): StateGroup[] {
 
   return this.stateGroups;
 }
+
+getHeaders()
+{
+// var option = {..
+//   url = '/projects/projectId/sheets/sheetId';
+// }
+this.httpservice.getRequest('/projects/'+this.projectId+'/sheets/'+this.sheetId).subscribe(
+  (response: any) => {
+    console.log(response);
+    this.rowsData = response.fields;
+    console.log("rows===>",this.rowsData);
+    
+    this.headersData = (response as any).fields;
+    console.log("Data",this.headersData);
+    this.num=response.records;
+    for(let i =response.records.length ;i <10;i++){
+      this.num.push("");
+     
+    }
+    
+    console.log('response:',response);
+  },
+  error => {
+    console.log("error",error);
+    
+  }
+);
+}
+
+
 
 
 }
