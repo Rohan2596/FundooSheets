@@ -23,6 +23,8 @@ import { ResizableModule } from 'angular-resizable-element';
 import { DemoComponent } from './component/demo/demo.component';
 import { AngularResizedEventModule } from 'angular-resize-event';
 import { ViewsheetTextareaComponent } from './component/viewsheet-textarea/viewsheet-textarea.component';
+import { MatSelectComponent } from './component/mat-select/mat-select.component';
+import { MatAutocompleteComponent } from './component/mat-autocomplete/mat-autocomplete.component';
 // import { ResizableModule } from 'angular-resizable-element';
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ViewsheetTextareaComponent } from './component/viewsheet-textarea/views
     AddSheetdialogBoxComponent,
     DemoComponent,
     ViewsheetTextareaComponent,
+    MatSelectComponent,
+    MatAutocompleteComponent,
     
   
   ],

@@ -32,30 +32,18 @@
                
                 <div fxFlex="20px" class="srno" fxLayoutAlign="center center" style="position: sticky;left: 0;z-index:1;">{{j+1}}</div>
                 <div class="row" fxFlex *ngFor="let rows of rowsData;let i = index">
-                        <div class="Dropdown" *ngIf="rows.isEnum==true && item['city name']!=''">
-                            {{item[headersData[i].name]}}
-                            <!-- <mat-select [(value)]="item.city name">
-                          <mat-option *ngFor="let key of rows['options']" [value]="key" style="font-size: 12px;color: #40494D;">
-                            {{key}}
-                          </mat-option>
-                        </mat-select> -->
-                   
+                        <div class="Dropdown" *ngIf="rows.isEnum==true">
+                                
+                           <app-mat-select [selectedValue]=item[headersData[i].name] [rows]="rows"></app-mat-select>
                     </div>
-                    <div *ngIf="rows.allowSuggestion==true" [formGroup]="stateForm">
+                    <div *ngIf="rows.allowSuggestion==true" >
  
-                        <input   matInput class="autocomplete" formControlName="stateGroup" required [matAutocomplete]="autoGroup">
-                          <mat-autocomplete #autoGroup="matAutocomplete">
-                            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
-                              <mat-option *ngFor="let name of group.names" [value]="name" >
-                                {{name}}
-                              </mat-option>
-                          </mat-optgroup>
-                        </mat-autocomplete>
+                      <app-mat-autocomplete [selectedValue]=item[headersData[i].name]></app-mat-autocomplete>
                       
                     </div>
                     <div *ngIf="rows.allowSuggestion==false && rows.isEnum==false">
                         <!-- <div class="input" type="text" contentEditable ></div>     -->
-                      <app-viewsheet-textarea [textMessage]="headersData"></app-viewsheet-textarea>
+                      <app-viewsheet-textarea [textMessage]=item[headersData[i].name]></app-viewsheet-textarea>
                     </div>
             </div>
         </div>

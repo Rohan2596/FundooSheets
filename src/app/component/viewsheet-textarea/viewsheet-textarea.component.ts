@@ -6,13 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./viewsheet-textarea.component.scss']
 })
 export class ViewsheetTextareaComponent implements OnInit {
-  @Input() textMessage=[];
+  @Input() textMessage: any;
 
   constructor() { }
 
   ngOnInit() {
-    console.log("parent data=====>",this.textMessage);
-    
+
   }
 
 }
